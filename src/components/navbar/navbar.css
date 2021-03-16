@@ -1,9 +1,8 @@
 .navbar-default { 
     background-color: #235390;    
 } 
-.navbar-default .navbar-brand, 
-        .navbar-default .navbar-text { 
-            color: white; 
+.navbar-default .navbar-brand{ 
+            color: white !important; 
         } 
 
 .nav-link{

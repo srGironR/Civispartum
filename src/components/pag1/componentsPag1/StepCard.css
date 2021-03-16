@@ -1,0 +1,37 @@
+.StO{
+    display: flex;
+    flex-direction: row;
+    
+}
+.StO{
+    width: 50%;
+}
+
+.DescO{    
+    padding: 1rem;  
+    text-align: start;  
+    
+}
+.imgO{
+    margin: 1rem 0 auto 5rem;
+    width: 7rem;
+       
+}
+
+@media only screen and (max-width: 1022px) {
+    .StO{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+                
+    }
+    .DescO{
+        padding: 1rem;        
+        width: 100%;    
+    }
+    .imgO{
+        margin: 1rem auto 1rem 1rem;
+    }
+
+}

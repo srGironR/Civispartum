@@ -8,7 +8,7 @@ function navbar(){
     return(
     <div className="Navbar-Container">
 
-        <Navbar className="navbar navbar-default" varient="light" fixed="top">
+        <Navbar className="navbar navbar-default"  fixed="top">
             <Navbar.Brand href="#home">
             {' '}
             Civispartum
