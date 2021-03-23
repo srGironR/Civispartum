@@ -185,9 +185,6 @@ hr.new4 {
   flex-wrap: wrap;
     
 }
-a {
-    color: #FFF;
-  }
-  a:hover {
+.linkF:hover {
      color: #DBC01F;
   }

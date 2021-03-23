@@ -1,0 +1,65 @@
+.Sidebar{
+    height: 100%;
+    width: 250px;
+    background-color: #235390;
+}
+.SidebarList{
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+.Perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.PicP{
+    width: 45px;
+    border-radius: 512px;
+    
+}
+.Logo{
+    font-family: 'Comfortaa';
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+}
+.Pname{
+    color: white;
+    width: 60%;
+    height: auto;
+    text-align: start;
+    font-size: 14px;
+    padding: 1rem;
+    margin: 0;
+}
+.SidebarList .row{
+    text-align: start;
+    width: 100%;
+    height: 60px;    
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;    
+}
+.SidebarList .row:hover{
+    cursor: pointer;
+    background-color: #293846;
+}
+.SidebarList #active{
+    background-color: #293846;
+}
+
+.row #icon{
+    flex:30%;
+    display: grid;
+    place-items: center;
+}
+.row #title{
+    flex: 70%;
+}
