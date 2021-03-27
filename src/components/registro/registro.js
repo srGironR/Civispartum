@@ -1,6 +1,7 @@
 import React from 'react';
 import Nnavbar from "../navbar/navbar.js";
 import "../registro/registro.css"
+import {Link} from 'react-router-dom';
 
 const register=()=>(
 
@@ -29,7 +30,7 @@ const register=()=>(
                         <div class="form-group">
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"></input>
                         </div>
-                        <button type="submit" class="btn btn-primary">CREAR CUENTA</button>
+                        <Link to="/Login"> <button type="submit" class="btn btn-primary">CREAR CUENTA</button></Link>
                     </form>
                     </div>                  
                 </div>

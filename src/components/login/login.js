@@ -1,6 +1,7 @@
 import React from 'react';
 import Nnavbar from "../navbar/navbar.js";
 import "../login/login.css"
+import {Link} from 'react-router-dom';
 
 const login=()=>(
 
@@ -27,9 +28,9 @@ const login=()=>(
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"></input>
                         </div>
                         <div class="form-check">
-                        <a className="Pw-Co" href="">Olvidó su contraseña?</a>
+                        <a className="Pw-Co" href="https://www.w3schools.com">Olvidó su contraseña?</a>
                         </div>
-                        <button type="submit" class="btn btn-primary">INGRESAR</button>
+                        <Link to="/Temas"><button type="submit" class="btn btn-primary">INGRESAR</button></Link>
                     </form>
                     </div>                  
                 </div>
