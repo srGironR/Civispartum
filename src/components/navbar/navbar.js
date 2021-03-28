@@ -14,8 +14,8 @@ function navbar(){
             Civispartum
             </Navbar.Brand>
             <Nav className ="ml-auto">
-            <Nav.Link  href="#Ingresar">Ingresar</Nav.Link>
-            <Nav.Link  href="#Registrate">Regístrate</Nav.Link>
+            <Nav.Link  href="/Login">Ingresar</Nav.Link>
+            <Nav.Link  href="/Registro">Regístrate</Nav.Link>
             </Nav>
         </Navbar>
 

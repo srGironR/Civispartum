@@ -2,6 +2,13 @@ import SideBar from "../Dashboard/Sidebar";
 import SubjeCard from "../Dashboard/SubjectCard/subjectCard";
 import "../Dashboard/Main.css";
 import imgV from "../pics/Voto.png"
+import Ilp from "../pics/ilp.jpg"
+import Plebiscito from "../pics/plebiscito.jpg"
+import CP from "../pics/cp.jpg"
+import DH from "../pics/derechos-humanos.jpg"
+import ECI from "../pics/educivi.jpg"
+import EC from "../pics/EduCiudada.jpg"
+import CCT from "../pics/CC.webp"
 
 
 
@@ -18,9 +25,9 @@ function Main(){
                 </div>
                 <div className="Subjects">
                     <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
+                    <SubjeCard Tema="La iniciativa legislativa" isrcT={Ilp}></SubjeCard>
+                    <SubjeCard Tema="El plebiscito" isrcT={Plebiscito}></SubjeCard>
+                    <SubjeCard Tema="La consulta popular" isrcT={CP}></SubjeCard>
                 </div>
             </div>
                 <div className="OtherMat">
@@ -28,10 +35,10 @@ function Main(){
                     <b>Mecanismos de Participación ciudadana</b>
                 </div>
                 <div className="Subjects">
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
+                    <SubjeCard Tema="Los derechos humanos" isrcT={DH}></SubjeCard>
+                    <SubjeCard Tema="Educación cívica" isrcT={ECI}></SubjeCard>
+                    <SubjeCard Tema="Educación ciudadana" isrcT={EC}></SubjeCard>
+                    <SubjeCard Tema="Competencias Ciudadanas Tips" isrcT={CCT}></SubjeCard>
                 </div>
                 </div>
 

@@ -2,15 +2,16 @@ import React from 'react';
 import Nnavbar from "../navbar/navbar.js";
 import "../login/login.css"
 import {Link} from 'react-router-dom';
+import backArrow from "../pics/left-arrosw.png"
 
 const login=()=>(
 
         <div className="Login-container">
-            <Nnavbar></Nnavbar>
+           <Nnavbar></Nnavbar>
            
             <div className="InI-cont">
             <div className="imageB">
-            <input type="image" className="imageB" alt="Back Arrow" src="https://dw-iconusers.flaticon.com/15585/15585462/1616096572195.svg?token=exp=1616100887~hmac=15ed282c539bc5208ea67b8eb03d6678"></input>
+            <Link to="/Registro"><input type="image" className="imageB" alt="Back Arrow" src={backArrow}></input></Link>
             </div>
                 <div className="ImL"></div>
                 <div className="InLo">

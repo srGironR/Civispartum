@@ -29,7 +29,7 @@ export const SidebarData=[
      { 
         title: "Cerrar sesión",
         icon: <ExitToAppIcon/>,
-        link: "/home"
+        link: "/"
      },
      
 ]

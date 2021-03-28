@@ -4,6 +4,7 @@ import Pag1 from './components/pag1/pag1';
 import Login from './components/login/login';
 import Register from './components/registro/registro';
 import Mmain from './components/Dashboard/Main';
+import Std from './components/stads/std.js'
 
 import {BrowserRouter, Route}  from 'react-router-dom'
 
@@ -15,7 +16,8 @@ function App() {
      <Route exact path="/" component={Pag1}/>
      <Route path="/Registro" component={Register}/>
      <Route path="/Login" component={Login}/>
-     <Route path="/Temas" component={Mmain}/>  
+     <Route path="/Temas" component={Mmain}/> 
+     <Route path="/Estadisticas" component={Std}/> 
      
     </div>
     </BrowserRouter>
