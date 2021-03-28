@@ -5,6 +5,7 @@ import Login from './components/login/login';
 import Register from './components/registro/registro';
 import Mmain from './components/Dashboard/Main';
 import Std from './components/stads/std.js'
+import Help from './components/help/help.js'
 
 import {BrowserRouter, Route}  from 'react-router-dom'
 
@@ -17,8 +18,10 @@ function App() {
      <Route path="/Registro" component={Register}/>
      <Route path="/Login" component={Login}/>
      <Route path="/Temas" component={Mmain}/> 
-     <Route path="/Estadisticas" component={Std}/> 
-     
+     <Route path="/Estadisticas" component={Std}/>
+     <Route path="/Ayuda" component={Help}/> 
+    
+
     </div>
     </BrowserRouter>
   );

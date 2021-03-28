@@ -39,8 +39,9 @@ function Main(){
                     <SubjeCard Tema="Educación cívica" isrcT={ECI}></SubjeCard>
                     <SubjeCard Tema="Educación ciudadana" isrcT={EC}></SubjeCard>
                     <SubjeCard Tema="Competencias Ciudadanas Tips" isrcT={CCT}></SubjeCard>
+                </div>              
                 </div>
-                </div>
+                
 
             </div>
             </div>

@@ -1,0 +1,59 @@
+.Main-Help-Cont{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.Fcontent{
+    display: flex;
+    flex-direction: column;
+}
+.Help-title{
+    text-align: start;
+    color: #434343;
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+.form-control{
+    width: 31.5rem;
+    height: 3.125rem;
+    border-radius: 15px;
+}
+.Search{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 3rem;
+}
+.FAsks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+.FAks-title{
+    text-align: start;
+    font-size: 24px;
+    color: #434343;
+    margin-top: 2rem;
+}
+.bar{
+    width: 344px;
+    border: 1px solid #9A9A9A;
+    
+}
+.Asks{
+    text-align: start;
+    width: 19.875rem;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px; 
+    display: flex;
+    justify-content: flex-start;    
+    color: #235390;
+}
+.Scontent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.063rem;
+}

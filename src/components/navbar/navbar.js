@@ -9,7 +9,7 @@ function navbar(){
     <div className="Navbar-Container">
 
         <Navbar className="navbar navbar-default"  fixed="top">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
             {' '}
             Civispartum
             </Navbar.Brand>

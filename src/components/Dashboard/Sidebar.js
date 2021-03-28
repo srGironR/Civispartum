@@ -2,19 +2,20 @@ import React from 'react';
 import "../Dashboard/Sidebar.css"
 import {SidebarData} from './SidebarData'
 import ImgP from "../pics/image.png";
+import {Link} from 'react-router-dom';
 
 function Sidebar(){
     
     return (
    
     <div className="Sidebar">
-        <div className="Logo">
+       <Link to="/Temas"> <div className="Logo">
             <p lassName="LogoT">Civispartum</p>
-        </div>
-        <div className="Perfil">
+        </div></Link>
+        <Link to="/Perfil"><div className="Perfil">
             <img className="PicP" src={ImgP} alt="Imagen de perfil"></img>
             <p className="Pname">Nombre</p>
-        </div>
+        </div></Link>
         <ul className="SidebarList" >
      {SidebarData.map((val, key)=> {
         return ( 
