@@ -9,6 +9,7 @@ import DH from "../pics/derechos-humanos.jpg"
 import ECI from "../pics/educivi.jpg"
 import EC from "../pics/EduCiudada.jpg"
 import CCT from "../pics/CC.webp"
+import {Link} from 'react-router-dom';
 
 
 
@@ -24,7 +25,7 @@ function Main(){
                     <b>Mecanismos de Participación ciudadana</b>
                 </div>
                 <div className="Subjects">
-                    <SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard>
+                   <Link to="/Video"><SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard></Link>
                     <SubjeCard Tema="La iniciativa legislativa" isrcT={Ilp}></SubjeCard>
                     <SubjeCard Tema="El plebiscito" isrcT={Plebiscito}></SubjeCard>
                     <SubjeCard Tema="La consulta popular" isrcT={CP}></SubjeCard>

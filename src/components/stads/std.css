@@ -1,0 +1,55 @@
+.MainSTDContent{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.contentStd{
+    display: flex;
+    flex-direction: column;
+}
+.Charts{
+    display: flex;
+    flex-direction: row;
+}
+.FrP{
+    display: flex;
+    flex-direction: row;
+    background-color:#2D609A ;
+    width: 22.8125rem;
+    height: 14.1875rem;
+    margin: 3rem 0 3rem 3rem;
+    border-radius: 25px;
+}
+.LastV{
+    display: flex;
+    flex-direction: row;
+}
+.last-Video-Cont{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 2rem 2rem;
+    
+}
+.Tittle-text{
+    color: white;
+}
+.Percentaje{
+    margin: 2rem 0 0 0;
+    font-size: 48px;
+    color: white;
+}
+.last-Video-Sec{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0rem 3rem;
+}
+.Date{
+    display: flex;
+    align-items:center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.Pc{
+    width: 8.5rem;
+    height: 8.5rem;
+}

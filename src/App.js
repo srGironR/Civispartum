@@ -6,6 +6,9 @@ import Register from './components/registro/registro';
 import Mmain from './components/Dashboard/Main';
 import Std from './components/stads/std.js'
 import Help from './components/help/help.js'
+import Forum from './components/Forum/forum.js'
+import Profile from './components/Profile/profile.js'
+import Video from './components/Video/video.js'
 
 import {BrowserRouter, Route}  from 'react-router-dom'
 
@@ -20,7 +23,9 @@ function App() {
      <Route path="/Temas" component={Mmain}/> 
      <Route path="/Estadisticas" component={Std}/>
      <Route path="/Ayuda" component={Help}/> 
-    
+     <Route path="/Foro" component={Forum}/>
+     <Route path="/Perfil" component={Profile}/>
+     <Route path="/Perfil" component={Video}/>
 
     </div>
     </BrowserRouter>
