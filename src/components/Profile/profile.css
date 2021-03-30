@@ -1,0 +1,78 @@
+.ProfileAll{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.Profile-inPH{
+    display: flex;
+    flex-direction: column;
+}
+.Profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0 3rem 3rem;
+}
+.imgPer{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50px;
+}
+.levelP{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1rem;
+    align-items: flex-start;
+}
+.TwoLvl{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Medal{    
+    filter: grayscale(100%);
+    width: 2.1875rem;
+    height: 2.1875rem;
+}
+.lvl{
+    margin: 0;
+}
+.PrReArH{
+    display: flex;
+    flex-direction: row;
+}
+.RTittle{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 1rem 3rem;
+    font-weight: bold;
+    font-size: 24px;
+    color: #434343;
+
+}
+.bar-P{
+    margin: 0 0 0 3rem;
+    width: 325px;
+    border: 1px solid #9A9A9A;
+}
+.Friends-title{    
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0 2rem 2rem;
+    font-weight: bold;
+    font-size: 24px;
+    color: #434343;
+}
+.Friends{
+    margin: 3rem 0 0 2rem;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid #9A9A9A;
+    box-sizing: border-box;    
+    border-radius: 25px;
+}
+.btnPlus{
+    margin-top: 1rem;
+
+}

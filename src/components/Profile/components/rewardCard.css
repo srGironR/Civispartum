@@ -1,0 +1,41 @@
+.CardR{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 21rem;
+    margin: 2rem 0 0 3rem;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.imgR{
+    padding: 1rem;
+    width: 5.813rem;
+    height: 5.813rem;
+}
+.DescR{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.Rdescript{
+    
+    text-align: start;
+    margin: 0 0 1rem 0;
+    color: #434343;
+}
+.Progress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.barS{    
+    width: 138px;
+    height: 15px;
+    background: #C4C4C4;
+    border-radius: 25px;
+}
+.scoreR{
+    margin: 0 0 0 1rem;
+    color: #434343;
+}
