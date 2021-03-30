@@ -1,0 +1,34 @@
+.NavbarVo { 
+    background-color: #000;    
+} 
+.navbar-default .Navbar-branV{ 
+            color: white ; 
+            font-size: 15px;
+        } 
+.Navbar-branV:hover{
+    color: #DBC01F !important;
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: #fff !important;
+    }
+.nav-link:hover{
+    color: #DBC01F !important;
+}
+.Navbar-Container{
+    color: #fff;
+    margin-left: auto;
+}
+.Nusr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.NameVi{
+    margin:0;
+}
+.user-prof{
+    width: 2rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+}

@@ -25,7 +25,7 @@ function App() {
      <Route path="/Ayuda" component={Help}/> 
      <Route path="/Foro" component={Forum}/>
      <Route path="/Perfil" component={Profile}/>
-     <Route path="/Perfil" component={Video}/>
+     <Route path="/Video" component={Video}/>
 
     </div>
     </BrowserRouter>
