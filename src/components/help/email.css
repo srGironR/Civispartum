@@ -1,0 +1,39 @@
+.o-email-container{
+    display:flex;
+    flex-direction: column; 
+}
+
+.contact-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.o-item-input{
+    display:flex;
+    margin-bottom: .7rem;
+    border-radius: .5rem;
+}
+
+.o-title-email{
+    display:flex;
+    justify-content: left;
+    font-weight: 600;
+}
+.o-input-email{
+    display: flex;
+    width: 5rem;
+    background-color:  #235390;
+    color:white;
+    border-radius: .5rem;
+    border:none;
+}
+
+.o-input-email:hover{
+    display: flex;
+    width: 5rem;
+    background-color: rgb(214, 214, 214);
+    color: #235390;
+    border-radius: .5rem;
+    border: black;
+    border-width: 5px;
+}

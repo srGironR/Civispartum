@@ -3,6 +3,7 @@ import Sidebar from "../Dashboard/Sidebar";
 import "../help/help.css"
 import {useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Email from "./email.js"
 
 export default function Help(){
     const [showFirst, setShowFirst] = useState(false);
@@ -24,7 +25,7 @@ export default function Help(){
         <div className="Fcontent">
             <div className="Search">
                 <b className="Help-title">Centro de ayuda de Civispatrum</b>
-                <input className="form-control" id="Sbar" type="text" placeholder="Escribe tu pregunta" aria-label="Search" />
+                <Email/>
             </div>
                 <div className="FAsks">
                     <p className="FAks-title">Preguntas frecuentes</p>
