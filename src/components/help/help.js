@@ -9,7 +9,7 @@ const help=()=>(
         <div className="Fcontent">
             <div className="Search">
                 <b className="Help-title">Centro de ayuda de Civispatrum</b>
-                <input className="form-control" type="text" placeholder="Escribe tu pregunta" aria-label="Search" />
+                <input className="form-control" id="Sbar" type="text" placeholder="Escribe tu pregunta" aria-label="Search" />
             </div>
             <div className="FAsks">
                 <p className="FAks-title">Preguntas frecuentes</p>
