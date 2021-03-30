@@ -3,7 +3,7 @@ import React from 'react';
 import Pag1 from './components/pag1/pag1';
 import Login from './components/login/login';
 import Register from './components/registro/registro';
-import Mmain from './components/Dashboard/Main';
+import Mmain from './components/Dashboard/main';
 import Std from './components/stads/std.js'
 import Help from './components/help/help.js'
 import Forum from './components/Forum/forum.js'

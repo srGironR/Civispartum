@@ -1,6 +1,6 @@
 import SideBar from "../Dashboard/Sidebar";
 import SubjeCard from "../Dashboard/SubjectCard/subjectCard";
-import "../Dashboard/Main.css";
+import "../Dashboard/main.css";
 import imgV from "../pics/Voto.png"
 import Ilp from "../pics/ilp.jpg"
 import Plebiscito from "../pics/plebiscito.jpg"

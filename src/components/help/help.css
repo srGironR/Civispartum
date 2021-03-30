@@ -57,3 +57,24 @@
     flex-direction: column;
     margin-top: 6.063rem;
 }
+
+.o-array{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.o-button-help{
+    text-align: start;
+    width: 19.875rem;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px; 
+    display: flex;
+    justify-content: flex-start;    
+    color: #235390;
+    background-color: transparent;
+    border: none;
+}
