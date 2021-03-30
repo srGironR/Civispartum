@@ -16,7 +16,7 @@
 .Title-con{
     position: unset;
     text-align: start;
-   padding: 2rem;
+   margin: 2rem 0 0 3rem;
     color: #434343;
     font-size: 24px;
 }

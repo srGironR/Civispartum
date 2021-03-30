@@ -80,7 +80,7 @@ export default function Help(){
             </div>
         <div className="Scontent">
         <div className="FAsks">
-                <p className="FAks-title">Preguntas frecuentes</p>
+                <p className="FAks-titleT">Usar Civispartum</p>
                 <div className="bar"></div>
                 <div className="o-array">
                         <button onClick={() =>setShowSix(true)} className="o-button-help">¿Cómo gano premios?</button>
@@ -116,7 +116,7 @@ export default function Help(){
                
             </div>
             <div className="FAsks">
-                <p className="FAks-title">Preguntas frecuentes</p>
+                <p className="FAks-titleT">Reportar problemas</p>
                 <div className="bar"></div>
                 <div className="o-array">
                         <button onClick={() =>setShowNine(true)} className="o-button-help">¿Cómo reporto un problema con el contenido del vídeo?</button>
