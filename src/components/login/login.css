@@ -69,6 +69,7 @@
     text-decoration: underline;
  }
 
+
  @media only screen and (max-width: 800px) {
    .InI-cont{
        display: flex;
