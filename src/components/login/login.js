@@ -1,13 +1,17 @@
 import React from 'react';
 import Nnavbar from "../navbar/navbar.js";
-import "../login/login.css"
+import "../login/login.css";
 import {Link} from 'react-router-dom';
 import backArrow from "../pics/left-arrosw.png";
 import axios from "axios";
-
+import Alert from 'react-bootstrap/Alert';
 
 
 class Login extends React.Component{
+
+    constructor(props){
+        super(props);
+    }
 
     state ={
         form:{
@@ -36,8 +40,24 @@ class Login extends React.Component{
         let url = 'http://localhost:8080/usuario/login';
         axios.post(url, this.state.form)
         .then(response =>{
+            if(response.data === "Ingresa"){
+                localStorage.setItem("NombreUsuario", response.data);
+                this.props.history.push("/Temas");
+            }else{
+                this.setState({
+                    error : true,
+                    errorMes : response.data
+                })
+            }
             console.log(response);
+        }).catch( error =>{
+            console.log(error)
+            this.setState({
+                error : true,
+                errorMes : "Error del servicio"
+            })
         })
+
     }
 
     render(){
@@ -59,15 +79,24 @@ class Login extends React.Component{
                     <div className="Info-Container">
                     <form onSubmit={this.handlerSubmit}>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo o usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"  name="contrasenaEst" onChange={this.handlerOnChange}></input>
                         </div>
-                        <div class="form-check">
-                        <a className="Pw-Co" href="https://www.w3schools.com">Olvidó su contraseña?</a>
-                        </div>
-                        <Link to="/Temas"><button type="submit" class="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button></Link>
+                        
+                            {this.state.error === true &&
+                            <>
+                                <div class="form-check">
+                                    <Alert variant = 'warning'>
+                                        {this.state.errorMes}
+                                    </Alert>
+                                    <a className="Pw-Co" href="https://www.w3schools.com">¿Olvidó su contraseña?</a>
+                                </div>
+                            </>
+                            }
+
+                        <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button>
 
                     </form>
                     </div>                  
