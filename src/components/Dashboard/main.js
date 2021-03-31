@@ -14,8 +14,7 @@ import {Link} from 'react-router-dom';
 
 
 function Main(){     
-    console.log(localStorage.getItem("NombreUsuario"));  
-    //var nom = localStorage.getItem("NombreUsuario");  
+    //console.log(localStorage.getItem("NombreUsuario"));  
         return(
         <div className="Main-container">            
             <SideBar/>
@@ -33,7 +32,7 @@ function Main(){
             </div>
                 <div className="OtherMat">
                 <div className="Title-con">
-                    <b>Mecanismos de Participación ciudadana</b>
+                    <b>Material Adicional</b>
                 </div>
                 <div className="Subjects">
                     <SubjeCard Tema="Los derechos humanos" isrcT={DH}></SubjeCard>
