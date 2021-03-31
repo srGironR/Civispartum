@@ -41,7 +41,7 @@ class Login extends React.Component{
         axios.post(url, this.state.form)
         .then(response =>{
             if(response.data === "Ingresa"){
-                localStorage.setItem("NombreUsuario", response.data);
+                localStorage.setItem("NombreUsuario", this.state.form.nombreEst);
                 this.props.history.push("/Temas");
             }else{
                 this.setState({

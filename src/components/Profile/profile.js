@@ -24,7 +24,7 @@ const Profile=()=>(
             <div className="Profile-info">
                 <img className="imgPer " src={ImgP} alt=""></img>
                 <div className="levelP">
-                    <b className="">Nombre</b>
+                    <b className="">{localStorage.getItem("NombreUsuario")}</b>
                     <div className="TwoLvl">             
                     <img className="Medal" src={Medal} alt=" "></img>
                     <p className="lvl"> Nivel: 0</p>

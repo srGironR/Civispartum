@@ -13,12 +13,12 @@ import {Link} from 'react-router-dom';
 
 
 
-function Main(){        
-        
+function Main(){     
+    console.log(localStorage.getItem("NombreUsuario"));  
+    //var nom = localStorage.getItem("NombreUsuario");  
         return(
         <div className="Main-container">            
             <SideBar/>
-            
             <div className="info-Con">
             <div className="ppalMat">
                 <div className="Title-con">

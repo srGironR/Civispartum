@@ -14,7 +14,7 @@ function Sidebar(){
         </div></Link>
         <Link to="/Perfil"><div className="Perfil">
             <img className="PicP" src={ImgP} alt="Imagen de perfil"></img>
-            <p className="Pname">Nombre</p>
+            <p className="Pname">{localStorage.getItem("NombreUsuario")}</p>
         </div></Link>
         <ul className="SidebarList" >
      {SidebarData.map((val, key)=> {
