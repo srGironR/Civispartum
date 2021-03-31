@@ -9,25 +9,37 @@ import Help from "./components/help/help.js";
 import Forum from "./components/Forum/forum.js";
 import Profile from "./components/Profile/profile.js";
 import Video from "./components/Video/video.js";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Component } from "react";
 
-import { BrowserRouter, Route } from "react-router-dom";
-
-function App() {
+export default class App extends Component {
+/*
+  constructor(){
+    super();
+    this.state ={
+      loggedInStatus: "NOT_LOGGED_IN",
+      user:{}
+    }
+  }
+  */
+render(){
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Route exact path="/" component={Pag1} />
-        <Route path="/Registro" component={Register} />
-        <Route path="/Login" component={Login} />
-        <Route path="/Temas" component={Mmain} />
-        <Route path="/Estadisticas" component={Std} />
-        <Route path="/Ayuda" component={Help} />
-        <Route path="/Foro" component={Forum} />
-        <Route path="/Perfil" component={Profile} />
-        <Route path="/Video" component={Video} />
-      </div>
-    </BrowserRouter>
-  );
+      <BrowserRouter>
+          <Switch>
+              <div className="App">
+                <Route exact path= {"/"} render={props =>(<Pag1{...props}/>)}/>
+                <Route exact path="/Registro" render ={ props =>(<Register{...props}/>)}/>
+                <Route exact path="/Login" render={ props =>(<Login{...props}/>)}/>
+                <Route path="/Temas" render={ props =>(<Mmain{...props}/>)} />
+                <Route path="/Estadisticas" render={ props=>(<Std{...props}/>)} />
+                <Route path="/Ayuda" render ={ props =>(<Help{...props}/>)} />
+                <Route path="/Foro" render={ props =>(<Forum{...props}/>)} />
+                <Route path="/Perfil" render={ props =>(<Profile{...props}/>)} />
+                <Route path="/Video" render={ props =>(<Video{...props}/>)} />
+              </div>
+          </Switch>
+      </BrowserRouter>
+    );
+  }
 }
 
-export default App;
