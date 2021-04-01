@@ -14,6 +14,7 @@ import ImgP3 from "../pics/imagep3.png"
 import Champ from "../pics/winner.png"
 import Ilp from "../pics/ilp.jpg"
 import Plebiscito from "../pics/plebiscito.jpg"
+import user from "../pics/user.png";
 
 
 
@@ -22,9 +23,9 @@ const Profile=()=>(
         <Sidebar className="SsB"/>
         <div className="Profile-inPH">
             <div className="Profile-info">
-                <img className="imgPer " src={ImgP} alt=""></img>
+                <img className="imgPer " src={user} alt=""></img>
                 <div className="levelP">
-                    <b className="">{localStorage.getItem("NombreUsuario")}</b>
+                    <b className="o-nombre-perfil">{localStorage.getItem("NombreUsuario")}</b>
                     <div className="TwoLvl">             
                     <img className="Medal" src={Medal} alt=" "></img>
                     <p className="lvl"> Nivel: 0</p>

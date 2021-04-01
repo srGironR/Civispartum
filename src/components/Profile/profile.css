@@ -84,3 +84,10 @@
 .Prof-His{
     margin-left: -2rem;
 }
+
+.o-nombre-perfil{
+    font-weight: bold;
+    font-size: 18px;
+    color: #235390;
+    font-family: 'Comfortaa';
+}

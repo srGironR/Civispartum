@@ -13,8 +13,8 @@ import {Link} from 'react-router-dom';
 
 
 
+
 function Main(){     
-    //console.log(localStorage.getItem("NombreUsuario"));  
         return(
         <div className="Main-container">            
             <SideBar/>

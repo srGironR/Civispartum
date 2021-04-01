@@ -3,6 +3,7 @@ import "../Dashboard/Sidebar.css"
 import {SidebarData} from './SidebarData'
 import ImgP from "../pics/image.png";
 import {Link} from 'react-router-dom';
+import user from "../pics/user.png";
 
 function Sidebar(){
     
@@ -13,7 +14,7 @@ function Sidebar(){
             <p lassName="LogoT">Civispartum</p>
         </div></Link>
         <Link to="/Perfil"><div className="Perfil">
-            <img className="PicP" src={ImgP} alt="Imagen de perfil"></img>
+            <img className="PicP" src={user} alt="Imagen de perfil"></img>
             <p className="Pname">{localStorage.getItem("NombreUsuario")}</p>
         </div></Link>
         <ul className="SidebarList" >
