@@ -12,8 +12,6 @@ import CCT from "../pics/CC.webp"
 import {Link} from 'react-router-dom';
 
 
-
-
 function Main(){     
         return(
         <div className="Main-container">            

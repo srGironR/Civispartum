@@ -8,6 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 
 
 class Login extends React.Component{
+    
 
     constructor(props){
         super(props);
@@ -33,7 +34,6 @@ class Login extends React.Component{
                 [e.target.name]: e.target.value
             }
         })
-        //console.log(this.state.form);
     }
 
     handlerButton =()=>{
@@ -61,6 +61,7 @@ class Login extends React.Component{
     }
 
     render(){
+        
     return(
         <React.Fragment>
         <div className="Login-container">
@@ -86,6 +87,7 @@ class Login extends React.Component{
                         </div>
                         
                             {this.state.error === true &&
+                            
                             <>
                                 <div class="form-check">
                                     <Alert variant = 'warning'>

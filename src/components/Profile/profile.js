@@ -53,9 +53,9 @@ const Profile=()=>(
         </div>
         <div className="Friends">
         <b className="Friends-title">Amigos</b>
-                <UsersCard isrc={ImgP1} Name="Jacob R" timeU="Desde 2021"  />
-                <UsersCard isrc={ImgP2} Name="Bella D" timeU="Desde 2021"  />
-                <UsersCard isrc={ImgP3} Name="Henry F" timeU="Desde 2021" />     
+                <UsersCard isrc={user} Name="Jacob R" timeU="Desde 2021"  />
+                <UsersCard isrc={user} Name="Bella D" timeU="Desde 2021"  />
+                <UsersCard isrc={user} Name="Henry F" timeU="Desde 2021" />     
         </div>
 
     </div>

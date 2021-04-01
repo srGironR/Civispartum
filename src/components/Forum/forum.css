@@ -54,3 +54,19 @@
     font-size: 24px;
     color: #434343;
 }
+
+.o-form-foro{
+    display:flex;
+    flex-direction: column;
+}
+.o-label-mensaje{
+    align-content: left;
+    text-align: left;
+    padding-left: 3rem;
+    font-weight: bold;
+}
+
+.o-comentario-foro{
+    margin-left: 3rem;
+}
+
