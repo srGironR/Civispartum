@@ -38,7 +38,7 @@ const Profile=()=>(
                     <div className="bar-P"></div>
                     <RCard isrc={Wise} descript="Completa 1 vídeo sin errores" score="0"/>
                     <RCard isrc={Medal} descript="Completa al menos un vídeo con un puntaje de 5 " score="0"/>
-                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="0"/>         
+                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="1"/>         
                 </div>
                 <div className="Prof-His">
                 <p className="RTittle">Historial</p>

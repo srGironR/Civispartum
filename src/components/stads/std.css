@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+   
 }
 .contentStd{
     display: flex;
@@ -10,10 +11,12 @@
 .Charts{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .FrP{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-color:#2D609A ;
     width: 22.8125rem;
     height: 14.1875rem;
@@ -53,3 +56,4 @@
     width: 8.5rem;
     height: 8.5rem;
 }
+

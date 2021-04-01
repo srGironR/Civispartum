@@ -12,6 +12,7 @@
     "bootstrap": "^4.6.0",
     "canvasjs": "^1.8.3",
     "canvasjs-react-charts": "^1.0.5",
+    "d3": "^6.6.2",
     "emailjs-com": "^2.6.4",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",

@@ -92,7 +92,7 @@ class Forum extends React.Component {
 
                 {this.state.comments.map(comments =>
                 <>
-                    <ForumCard isrc={user} descript={comments.comentario} timeD={comments.nombreUser} />
+                    <ForumCard isrc={user} descript={comments.comentario} timeD={"Escrito por "+comments.nombreUser} />
                     <div className="bar-F"></div>
                 </>
                     )}
