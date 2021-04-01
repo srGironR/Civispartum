@@ -3,8 +3,10 @@ import Nnavbar from "../navbar/navbar.js";
 import "../registro/registro.css"
 import {Link} from 'react-router-dom';
 import backArrow from "../pics/left-arrosw.png"
+import axios from 'axios';
+import Alert from 'react-bootstrap/Alert';
 
-class Register extends React.Component (){
+class Register extends React.Component{
 
     constructor(props){
         super(props);
@@ -33,8 +35,25 @@ class Register extends React.Component (){
         })
     }
 
+    handlerButton =()=>{
+        let url = 'http://localhost:8080/usuario/new';
+        axios.post(url, this.state.form)
+        .then(response=>{
+            if(response.data === "Ok"){
+                this.props.history.push("/Login");
+            }else{
+                this.setState({
+                    error:true,
+                    errorMes: response.data
+                })
+            }
+            console.log(response);
+        })
+    }
+
 render(){
     return(
+        <React.Fragment>
         <div className="Login-container">
             <Nnavbar></Nnavbar>
            
@@ -54,12 +73,17 @@ render(){
                             <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Nombre" name="nombreEst" onChange={this.handlerOnChange}></input>  
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo" name="correoEsst" onChange={this.handlerOnChange}></input>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo" name="correoEst" onChange={this.handlerOnChange}></input>
                         </div>
                         <div class="form-group">
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="contrasenaEst" onChange={this.handlerOnChange}></input>
                         </div>
-                            <button type="submit" class="btn btn-primary">CREAR CUENTA</button>
+                        {this.state.error === true &&
+                            <Alert variant = 'warning'>
+                            {this.state.errorMes}
+                            </Alert>
+                        }
+                            <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>CREAR CUENTA</button>
                     </form>
                     </div>                  
                 </div>
@@ -67,6 +91,7 @@ render(){
             </div>
 
         </div>
+        </React.Fragment>
         )
     }
 }
