@@ -2,26 +2,39 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
-   
 }
 .contentStd{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 2.5rem;
 }
+
+.o-general-org{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .Charts{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-right: 5rem;
 }
 .FrP{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
     background-color:#2D609A ;
     width: 22.8125rem;
     height: 14.1875rem;
     margin: 3rem 0 3rem 3rem;
     border-radius: 25px;
+    padding-right: 2.5rem;
 }
 .LastV{
     display: flex;

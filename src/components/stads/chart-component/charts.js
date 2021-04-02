@@ -1,46 +1,57 @@
-import React, { Component } from 'react';
-import * as d3 from 'd3';
+import React, { useState, useEffect } from 'react';
+import { Bar } from 'react-chartjs-2';
+import "./charts.css";
+import axios from 'axios';
 
-class charts extends Component {
+const Charts = () => {
 
-    constructor(props){
-        super(props);
-        this.myRef = React.createRef();
-    }
+    const [chartData, setChartData] = useState({});
 
-    componentDidMount(){
-        
-        var {data} = this.props;
-        
-        const w = 500;
-        const h = 400;
+    const graf = () => {
+        let puntos = [];
+        let descrip = [];
+        let url = 'http://localhost:8080/usuario/puntaje/'+localStorage.getItem("NombreUsuario");
+        axios.get(url)
+        .then(res => {
+            console.log(res);
+            for (const dataObj of res.data) {
+              puntos.push(parseInt(dataObj.puntaje));
+              descrip.push(dataObj.descripcionPuntaje);
+            }
+            setChartData({
+              labels: descrip,
+              datasets: [
+                {
+                  label: "puntajes",
+                  data: puntos,
+                  backgroundColor: ["#2D609A"],
+                  borderWidth: 4
+                }
+              ]
+            });
+          })
+          .catch(err => {
+            console.log(err);
+          });
+        console.log(puntos, descrip);
+      };
+      useEffect(() => {
+        graf();
+      }, []);
 
-        const accessToRef = d3.select(this.myRef.current)
-          .append("svg")
-          .attr("width", w)
-          .attr("height", h)
-          .style("background-color", "#cccccc")
-          .style("padding", 10)
-          .style("margin-left", 50);
+    return (
+        <div className="o-bar-chart">
 
-        accessToRef.selectAll("rect")
-          .data(data)
-          .enter()
-          .append("rect")
-          .attr("x", (d, i) => i * 70)
-          .attr("y", (d, i) => h - 10 * d)
-          .attr("width", 65)
-          .attr("height", (d, i) => d * 10)
-          .attr("fill", "tomato");
-    
-    }
+                <Bar data = {chartData}
 
-    render() {
-        return (
-            <div ref={this.myRef}>
-            </div>
-        );
-    }
+                    height={400}
+                    width={600}
+                    options={{
+                        maintainAspectRaatio: false,
+                    }}
+                />
+        </div>
+    )
 }
 
-export default charts;
+export default Charts;
