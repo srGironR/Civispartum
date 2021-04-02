@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "../Profile/profile.css"
 import Sidebar from "../Dashboard/Sidebar";
 import RCard from "../Profile/components/rewardCard"
@@ -15,10 +15,29 @@ import Champ from "../pics/winner.png"
 import Ilp from "../pics/ilp.jpg"
 import Plebiscito from "../pics/plebiscito.jpg"
 import user from "../pics/user.png";
+import axios from 'axios';
 
 
 
-const Profile=()=>(
+class  Profile extends React.Component{
+
+    state ={
+        registro:[]
+    }
+
+    componentDidMount() {
+        let url = 'http://localhost:8080/usuario/registro/'+localStorage.getItem("NombreUsuario");
+        axios.get(url)
+          .then(res => {
+            const registro = res.data;
+            this.setState({ registro });
+            console.log(registro);
+          })
+      }
+
+  
+render(){
+    return(
     <div className="ProfileAll">
         <Sidebar className="SsB"/>
         <div className="Profile-inPH">
@@ -43,9 +62,11 @@ const Profile=()=>(
                 <div className="Prof-His">
                 <p className="RTittle">Historial</p>
                     <div className="bar-P"></div>
-                    <History isrc={Voto} Name="El voto" Time="5 min" score="0"/>
-                    <History isrc={Ilp} Name="La inicitiva legislativa" Time="5 min" score="0"/>
-                    <History isrc={Plebiscito} Name="El plebiscito" Time="5 min" score="0"/>
+
+                    {this.state.registro.map(registro=>
+                        <History isrc={Voto} Name={registro.actividad} fec={registro.fechaRegistro.split("T",1)} score="0"/>
+                    )}
+                    
                     <div className="btnPlus"><a className="btnPlus" href=" ">Más</a></div>
 
                 </div>
@@ -59,5 +80,8 @@ const Profile=()=>(
         </div>
 
     </div>
-);
+        )
+    }
+}
+
 export default Profile;

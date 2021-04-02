@@ -8,6 +8,30 @@ import Charts from "./chart-component/charts.js";
 
 class STD extends Component{
 
+    state={
+        act:[],
+        algo:[]
+    }
+    
+
+    componentDidMount(){
+        let url = 'http://localhost:8080/usuario/registro/ultimo/'+localStorage.getItem("NombreUsuario");
+        axios.get(url)
+        .then(res=>{
+            let act =[];
+            let alg = [];
+            console.log(res);
+            for (const paso of res.data){
+                alg.push(paso.fechaRegistro);
+                act.push(paso.actividad);
+            }
+            
+            
+            //var registros = res.data;
+            this.setState({alg, act});
+        })
+    }
+
 render(){
     return(
         <div className="MainSTDContent">
@@ -23,10 +47,11 @@ render(){
                                 <div className="LastV">
                                     <div className="last-Video-Cont">
                                         <b className="Tittle-text" >Último vídeo</b>
-                                        <b className="Percentaje" >0%</b>
+                                        <b className="Percentaje" >{this.state.act}</b>
                                     </div>
                                     <div className="last-Video-Sec">
-                                        <b className="Date" >Marzo 2021</b>
+                                        <b className="Date">Fecha-Hora</b>
+                                        <b className="Date2" >{this.state.alg}</b>
                                         <img className="Pc" src={Pc} alt=""></img>
                                     </div>
 
