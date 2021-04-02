@@ -18,7 +18,7 @@ function navbarV(){
             <Nav.Link  href="/Perfil">
                 <div className="Nusr">
                     <img className="user-prof" src={ImagePV} alt=""></img>
-                    <p className="NameVi">Nombre</p>
+                    <p className="NameVi">{localStorage.getItem("NombreUsuario")}</p>
                 </div>
             </Nav.Link>
             

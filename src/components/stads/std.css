@@ -5,20 +5,36 @@
 }
 .contentStd{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 2.5rem;
 }
+
+.o-general-org{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .Charts{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-right: 5rem;
 }
 .FrP{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
     background-color:#2D609A ;
-    width: 22.8125rem;
+    width: 24.8125rem;
     height: 14.1875rem;
     margin: 3rem 0 3rem 3rem;
     border-radius: 25px;
+    padding-right: 2.5rem;
 }
 .LastV{
     display: flex;
@@ -27,6 +43,7 @@
 .last-Video-Cont{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 2rem 0 2rem 2rem;
     
 }
@@ -34,22 +51,34 @@
     color: white;
 }
 .Percentaje{
-    margin: 2rem 0 0 0;
-    font-size: 48px;
+    margin: 0rem 0 0 0;
     color: white;
+    font-weight: bold;
 }
 .last-Video-Sec{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 2rem 0 0rem 3rem;
+    padding-bottom: 2.5rem;
 }
 .Date{
     display: flex;
     align-items:center;
     color: white;
     margin-bottom: 1rem;
+    text-align: center;
 }
+.Date2{
+    display:flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
 .Pc{
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-left: 2rem;
 }
+

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "../Profile/profile.css"
 import Sidebar from "../Dashboard/Sidebar";
 import RCard from "../Profile/components/rewardCard"
@@ -14,17 +14,37 @@ import ImgP3 from "../pics/imagep3.png"
 import Champ from "../pics/winner.png"
 import Ilp from "../pics/ilp.jpg"
 import Plebiscito from "../pics/plebiscito.jpg"
+import user from "../pics/user.png";
+import axios from 'axios';
 
 
 
-const Profile=()=>(
+class  Profile extends React.Component{
+
+    state ={
+        registro:[]
+    }
+
+    componentDidMount() {
+        let url = 'http://localhost:8080/usuario/registro/'+localStorage.getItem("NombreUsuario");
+        axios.get(url)
+          .then(res => {
+            const registro = res.data;
+            this.setState({ registro });
+            console.log(registro);
+          })
+      }
+
+  
+render(){
+    return(
     <div className="ProfileAll">
         <Sidebar className="SsB"/>
         <div className="Profile-inPH">
             <div className="Profile-info">
-                <img className="imgPer " src={ImgP} alt=""></img>
+                <img className="imgPer " src={user} alt=""></img>
                 <div className="levelP">
-                    <b className="">{localStorage.getItem("NombreUsuario")}</b>
+                    <b className="o-nombre-perfil">{localStorage.getItem("NombreUsuario")}</b>
                     <div className="TwoLvl">             
                     <img className="Medal" src={Medal} alt=" "></img>
                     <p className="lvl"> Nivel: 0</p>
@@ -37,14 +57,16 @@ const Profile=()=>(
                     <div className="bar-P"></div>
                     <RCard isrc={Wise} descript="Completa 1 vídeo sin errores" score="0"/>
                     <RCard isrc={Medal} descript="Completa al menos un vídeo con un puntaje de 5 " score="0"/>
-                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="0"/>         
+                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="1"/>         
                 </div>
                 <div className="Prof-His">
                 <p className="RTittle">Historial</p>
                     <div className="bar-P"></div>
-                    <History isrc={Voto} Name="El voto" Time="5 min" score="0"/>
-                    <History isrc={Ilp} Name="La inicitiva legislativa" Time="5 min" score="0"/>
-                    <History isrc={Plebiscito} Name="El plebiscito" Time="5 min" score="0"/>
+
+                    {this.state.registro.map(registro=>
+                        <History isrc={Voto} Name={registro.actividad} fec={registro.fechaRegistro.split("T",1)} score="0"/>
+                    )}
+                    
                     <div className="btnPlus"><a className="btnPlus" href=" ">Más</a></div>
 
                 </div>
@@ -52,11 +74,14 @@ const Profile=()=>(
         </div>
         <div className="Friends">
         <b className="Friends-title">Amigos</b>
-                <UsersCard isrc={ImgP1} Name="Jacob R" timeU="Desde 2021"  />
-                <UsersCard isrc={ImgP2} Name="Bella D" timeU="Desde 2021"  />
-                <UsersCard isrc={ImgP3} Name="Henry F" timeU="Desde 2021" />     
+                <UsersCard isrc={user} Name="Jacob R" timeU="Desde 2021"  />
+                <UsersCard isrc={user} Name="Bella D" timeU="Desde 2021"  />
+                <UsersCard isrc={user} Name="Henry F" timeU="Desde 2021" />     
         </div>
 
     </div>
-);
+        )
+    }
+}
+
 export default Profile;

@@ -3,9 +3,57 @@ import Nnavbar from "../navbar/navbar.js";
 import "../registro/registro.css"
 import {Link} from 'react-router-dom';
 import backArrow from "../pics/left-arrosw.png"
+import axios from 'axios';
+import Alert from 'react-bootstrap/Alert';
 
-const register=()=>(
+class Register extends React.Component{
 
+    constructor(props){
+        super(props);
+    }
+
+    state = {
+        form:{
+            "nombreEst":"",
+            "correoEst":"",
+            "contrasenaEst":""
+        },
+        error: false,
+        errorMes: ""
+    }
+
+    handlerSubmit = e=>{
+        e.preventDefault();
+    }
+
+    handlerOnChange = async e =>{
+        await this.setState({
+            form:{
+                ...this.state.form,
+                [e.target.name]: e.target.value
+            }        
+        })
+    }
+
+    handlerButton =()=>{
+        let url = 'http://localhost:8080/usuario/new';
+        axios.post(url, this.state.form)
+        .then(response=>{
+            if(response.data === "Ok"){
+                this.props.history.push("/Login");
+            }else{
+                this.setState({
+                    error:true,
+                    errorMes: response.data
+                })
+            }
+            console.log(response);
+        })
+    }
+
+render(){
+    return(
+        <React.Fragment>
         <div className="Login-container">
             <Nnavbar></Nnavbar>
            
@@ -20,18 +68,22 @@ const register=()=>(
                         <p className="SubT">Registro</p>
                     </div>
                     <div className="Info-Container">
-                    <form>
+                    <form onSubmit={this.handlerSubmit}>
                         <div class="form-group">
-                            <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Nombre"></input>
-                            
+                            <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Nombre" name="nombreEst" onChange={this.handlerOnChange}></input>  
                         </div>
                         <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo"></input>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo" name="correoEst" onChange={this.handlerOnChange}></input>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"></input>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" name="contrasenaEst" onChange={this.handlerOnChange}></input>
                         </div>
-                        <Link to="/Login"> <button type="submit" class="btn btn-primary">CREAR CUENTA</button></Link>
+                        {this.state.error === true &&
+                            <Alert variant = 'warning'>
+                            {this.state.errorMes}
+                            </Alert>
+                        }
+                            <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>CREAR CUENTA</button>
                     </form>
                     </div>                  
                 </div>
@@ -39,7 +91,8 @@ const register=()=>(
             </div>
 
         </div>
-
-    
-);
-export default register;
+        </React.Fragment>
+        )
+    }
+}
+export default Register;
