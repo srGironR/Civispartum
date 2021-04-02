@@ -1,10 +1,22 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
 import "../Video/video.css"
 import NavbarV from "../Video/components/NavbarV.js"
 import ReactPlayer from 'react-player'
+import vd1 from "../Video/Assets/TemaExp.mp4"
 
 
-const Video=()=>(
+
+class VideoVoto extends React.Component {
+  
+    changeThis () {
+        window.location = "/FullVid";
+        
+        console.log("Start");
+    }
+
+    render() {
+    return(
     <div className="ContentVideo-all">
         <NavbarV/>
         <div className="info-content">
@@ -31,10 +43,11 @@ const Video=()=>(
             <div className="VideoV">
             <ReactPlayer
             className="VideoV" 
-            url='https://www.youtube.com/watch?v=bmVKaAV_7-A'
+            url={vd1}
             width='640px' 
-            height='360px'
-            controls='True' 
+            height='480px'
+            controls='False' 
+            onStart={this.changeThis.bind(this)}
             />
             </div>
 
@@ -42,5 +55,7 @@ const Video=()=>(
         </div>
 
     </div>
-);
-export default Video;
+    );
+    }
+}
+export default VideoVoto;
