@@ -1,4 +1,4 @@
-.Card{
+.o-Card{
     display: flex;
     flex-direction: row;
     margin: 2rem 0 2rem 3rem;
@@ -17,5 +17,5 @@
 }
 .TimeDe{
     margin: 0;
-    color: #9A9A9A;
+    color: #235390;
 }

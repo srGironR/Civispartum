@@ -22,7 +22,7 @@ class STD extends Component{
             let alg = [];
             console.log(res);
             for (const paso of res.data){
-                alg.push(paso.fechaRegistro);
+                alg.push(new Date(paso.fechaRegistro).toString());
                 act.push(paso.actividad);
             }
             

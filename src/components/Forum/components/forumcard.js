@@ -6,7 +6,7 @@ const ForumCard = (props) =>{
     //Destructuring
   const{isrc, descript, timeD}=props;
   return(
-       <div className="Card">        
+       <div className="o-Card">        
         <img  className="imgP" src={isrc} alt=""></img>
         <div className="DescF">
             <b>{descript}</b>

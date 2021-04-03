@@ -3,6 +3,13 @@ import "../pag1/pag1.css";
 import Nnavbar from "../navbar/navbar.js";
 import SCard from "../pag1/componentsPag1/StepCard";
 import {Link} from 'react-router-dom';
+import FilesI from "../pics/files.png";
+import LoginI from "../pics/login.png"
+import VideoI from "../pics/video.png"
+import MedalI from "../pics/medal.png"
+import Insta from "../pics/instagram.png"
+import Twit from "../pics/twitter.png"
+import Face from "../pics/facebook.png"
 
 
 function pag1(){
@@ -29,20 +36,20 @@ function pag1(){
             <div className="HoWork-container">             
                 <SCard step={"Paso#1"} 
                 descript={"Ingresa o Registrate pulsando el botón empieza ahora o en la barra de navegación de arriba, escribe tus datos y dale click en iniciar sesión."}
-                isrc={" "}
+                isrc={LoginI}
                 />
                 <SCard step={"Paso#2"} 
                 descript={"Revisa los temás que se exponén y aquel que quieras revisar dale click para entrar y ver contenido, cómo conceptos importantes y su importancia."}
-                isrc={" "}
+                isrc={FilesI}
                 />  
                 
                 <SCard step={"Paso#3"} 
                 descript={"Reproduce el video interactivo, esté contará diferentes situaciones con respecto al tema escogido y deberás responder, al terminar se desbloquea un final con respecto a las respuestas y se da un puntaje. (Sólo se puede reproducir un video una vez, pero puedes repasar la infomarción de esta en la parte de concepto importante)."}
-                isrc={" "}
+                isrc={VideoI}
                 />
                 <SCard step={"Paso#4"} 
                 descript={"Dependiendo de que decisión tomás se te darán logros, premiando a las buenas desiciones con Medallas y la oportunidad de repetir videos anteriores( sólo una vez más) para mejorar el puntaje para competir contra otros."}
-                isrc={" "}
+                isrc={MedalI}
                 />                 
             </div>
             <div className="End-Container">
@@ -54,9 +61,9 @@ function pag1(){
            <footer className="FinalT">
                <p className="FinalTitle">Civispartum</p>
                <div>
-               <img className="imgRS" src="" alt=""></img>
-               <img className="imgRS" src="" alt=""></img>
-               <img className="imgRS" src="" alt=""></img>
+               <img className="imgRS" src={Insta} alt=""></img>
+               <img className="imgRS" src={Twit} alt=""></img>
+               <img className="imgRS" src={Face} alt=""></img>
                </div>
                <div className="Fele">
                    <a className="linkF" href="https://www.w3schools.com">Sobre nosotros</a>

@@ -10,7 +10,6 @@ import "../Questions/FullvidP.css";
 
 class Pr1 extends React.Component { 
   
-
   render() {
   
     return (
@@ -29,10 +28,12 @@ class Pr1 extends React.Component {
             </div>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="6000">
             <div className="QuestionsP">
-            <Link to="/Bad" className="QF"><QCard  descript="Un deber, es libre y es pago."/></Link>
+            
+            <Link to="/Bad" className="QF"><QCard  descript="Un deber, es libre y es pago." /></Link>
             <Link to="/Bad" className="QF"><QCard  descript="Es un derecho, pero no es libre."/></Link>
-            <Link to="/Good" className="QF"><QCard  descript="Un deber y un derecho."/></Link>
+            <Link to="/Good" className="QF"><QCard  descript="Un deber y un derecho."></QCard></Link>
             <Link to="/Bad" className="QF"><QCard  descript="No es un deber."/></Link>
+            
             </div> 
             </Animated>
             
