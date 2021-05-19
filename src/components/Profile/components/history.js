@@ -11,7 +11,7 @@ const history = (props) =>{
         <p className="Hname">{Name}</p>
             <div className="H-info">
                 <p className="TimeHR">{"Fecha : "+fec}</p>
-                <p className="scoreHR">{"Puntaje : "+score+"/5"}</p>
+                <p className="scoreHR">{"Puntaje : "+score}</p>
             </div>
        
     </div>

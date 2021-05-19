@@ -2,10 +2,14 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 .ForumAll{
     display: flex;
     flex-direction: column;
+}
+textarea{
+    resize: none;
 }
 .Forum-title{ 
     margin: 3rem 0 1rem 3rem;  
@@ -38,7 +42,7 @@
     border: 1px solid #9A9A9A;
 }
 .TopUsers{
-    margin: 8rem 0 0 8rem;
+    margin: 3rem 0 0 4rem;
     width: 19.0625rem;
     height: 19.375rem;
     border: 2px solid #9A9A9A;
@@ -49,7 +53,7 @@
 .TopUsers-title{    
     display: flex;
     justify-content: flex-start;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2rem 0 1rem 2rem;
     font-weight: bold;
     font-size: 24px;
     color: #434343;

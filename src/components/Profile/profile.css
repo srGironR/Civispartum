@@ -1,21 +1,23 @@
 .ProfileAll{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;       
     height: 100vh;
-    width: 100vw;
 }
-.SsB{
-    width: 250px;
+
+.PA{    
+    width: 80%;
 }
 .Profile-inPH{
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
 }
 .Profile-info{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 3rem 0 3rem 3rem;
+    margin: 3rem 0 0rem 3rem;
 }
 .imgPer{
     width: 6.25rem;
@@ -34,6 +36,13 @@
     flex-direction: row;
     justify-content: center;
 }
+.Prof-His{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+}
 .Medal{    
     filter: grayscale(100%);
     width: 2.1875rem;
@@ -44,8 +53,8 @@
 }
 .PrReArH{
     display: flex;
-    flex-direction: row;
-    margin-left: 1rem;
+    flex-direction: column;
+    
 }
 .RTittle{
     display: flex;
@@ -59,35 +68,34 @@
 .bar-P{
     margin: 0 0 0 3rem;
     width: 325px;
-    border: 1px solid #9A9A9A;
+    border: 0.5px solid #9A9A9A;
 }
 .Friends-title{    
     display: flex;
     justify-content: flex-start;
-    margin: 1rem 0 2rem 2rem;
+    margin: 1rem 0 1rem 2rem;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     color: #434343;
 }
 .Friends{
-    margin: 3rem 1rem 0 0;
-    width: 20rem;
-    height: 20rem;
+    margin: 1rem 0 0 15rem;
+    width: 17rem;
+    height: 17rem;
     border: 2px solid #9A9A9A;
     box-sizing: border-box;    
     border-radius: 25px;
 }
-.btnPlus{
-    margin-top: 1rem;
 
+.cardsP{    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
-.Prof-His{
-    margin-left: -2rem;
-}
-
 .o-nombre-perfil{
     font-weight: bold;
     font-size: 18px;
     color: #235390;
     font-family: 'Comfortaa';
+    text-transform: capitalize;
 }

@@ -6,8 +6,8 @@
     align-items: center;
 }
 .imgU{
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 40px;
 }
 .DescF{
@@ -16,7 +16,7 @@
 }
 .NameU{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     color: #235390;
 }
 .medalU{

@@ -8,6 +8,11 @@
     height: 4rem;
     border-radius: 40px;
 }
+.likes{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
 .DescF{
     display: flex;
     flex-direction: column;

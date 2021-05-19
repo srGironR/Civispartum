@@ -1,9 +1,9 @@
 import React from 'react';
 import Sidebar from "../Dashboard/Sidebar";
-import "../help/help.css"
+import "../help/help.css";
 import {useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Email from "./email.js"
+import Email from "./email.js";
 
 export default function Help(){
     const [showFirst, setShowFirst] = useState(false);

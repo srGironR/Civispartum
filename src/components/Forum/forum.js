@@ -1,11 +1,8 @@
 import React from 'react';
 import SideBar from "../Dashboard/Sidebar";
-import ForumCard from "../Forum/components/forumcard"
-import UsersCard from "../Forum/components/usersCard"
-import "../Forum/forum.css"
-import ImgP1 from "../pics/image.png"
-import ImgP2 from "../pics/imagep2.png"
-import ImgP3 from "../pics/imagep3.png"
+import ForumCard from "../Forum/components/forumcard";
+import UsersCard from "../Forum/components/usersCard";
+import "../Forum/forum.css";
 import axios  from 'axios';
 import user from "../pics/user.png";
 
@@ -14,8 +11,8 @@ class Forum extends React.Component {
     state ={
         form:{
             "comentario":"",
-            "numeroLikes":0,
-            "nombreUser": localStorage.getItem("NombreUsuario")
+            "nombreUser": localStorage.getItem("NombreUsuario"),
+            "numeroLikes":0 
         },
         error:false,
         errorMes:"",
@@ -35,12 +32,13 @@ class Forum extends React.Component {
         })
     }
 
-    handlerButton =()=>{
+    handlerButton =(e)=>{
         let url = 'http://localhost:8080/usuario/foro/new';
         axios.post(url, this.state.form)
         .then(response =>{
             if(response.data === "Ok"){
                 console.log("ok");
+                [e.target.name].reset();
             }else{
                 this.setState({
                     error : true,
@@ -55,7 +53,6 @@ class Forum extends React.Component {
                 errorMes : "Error del servicio"
             })
         })
-
     }
     
       componentDidMount() {
@@ -76,11 +73,11 @@ class Forum extends React.Component {
             <b>Foro de usuarios de Civispartum</b>
         </div>
         <div className="Forum-cotent">
-            <form className="o-form-foro" onSubmit={this.handlerButton}>
+            <form className="o-form-foro" onSubmit={this.handlerSubmit}>
                 <label className="o-label-mensaje"> Escribe tu mensaje</label>
                 <textarea name="comentario" placeholder="Aquí va tu maravilloso mensaje" className ="o-comentario-foro" onChange={this.handlerOnChange}/>
                 <div className="Btn-forum">
-                <button type="submit" class="btn btn-primary">Publicar algo</button>
+                <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>Publicar algo</button>
                 </div>
             </form>
 
@@ -92,7 +89,7 @@ class Forum extends React.Component {
 
                 {this.state.comments.map(comments =>
                 <>
-                    <ForumCard isrc={user} descript={comments.comentario} timeD={"Escrito por "+comments.nombreUser} />
+                    <ForumCard isrc={user} descript={comments.comentario} timeD={"Escrito por "+comments.nombreUser} likesD={comments.numeroLikes} />
                     <div className="bar-F"></div>
                 </>
                     )}

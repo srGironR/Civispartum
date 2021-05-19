@@ -1,9 +1,8 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
-import "../Video/video.css"
-import NavbarV from "../Video/components/NavbarV.js"
-import ReactPlayer from 'react-player'
-import vd1 from "../Video/Assets/TemaExp.mp4"
+import "../Video/video.css";
+import NavbarV from "../Video/components/NavbarV.js";
+import ReactPlayer from 'react-player';
+import vd1 from "../Video/Assets/TemaExp.mp4";
 
 
 
