@@ -1,8 +1,11 @@
 import React from 'react';
 import SideBar from "../Dashboard/Sidebar";
-import ForumCard from "../Forum/components/forumcard";
-import UsersCard from "../Forum/components/usersCard";
-import "../Forum/forum.css";
+import ForumCard from "../Forum/components/forumcard"
+import UsersCard from "../Forum/components/usersCard"
+import "../Forum/forum.css"
+import ImgP1 from "../pics/image.png"
+import ImgP2 from "../pics/imagep2.png"
+import ImgP3 from "../pics/imagep3.png"
 import axios  from 'axios';
 import user from "../pics/user.png";
 
@@ -12,7 +15,8 @@ class Forum extends React.Component {
         form:{
             "comentario":"",
             "nombreUser": localStorage.getItem("NombreUsuario"),
-            "numeroLikes":0 
+            "numeroLikes":0
+            
         },
         error:false,
         errorMes:"",
@@ -32,13 +36,12 @@ class Forum extends React.Component {
         })
     }
 
-    handlerButton =(e)=>{
+    handlerButton =()=>{
         let url = 'http://localhost:8080/usuario/foro/new';
         axios.post(url, this.state.form)
         .then(response =>{
             if(response.data === "Ok"){
                 console.log("ok");
-                [e.target.name].reset();
             }else{
                 this.setState({
                     error : true,
@@ -53,6 +56,7 @@ class Forum extends React.Component {
                 errorMes : "Error del servicio"
             })
         })
+
     }
     
       componentDidMount() {
@@ -73,11 +77,11 @@ class Forum extends React.Component {
             <b>Foro de usuarios de Civispartum</b>
         </div>
         <div className="Forum-cotent">
-            <form className="o-form-foro" onSubmit={this.handlerSubmit}>
+            <form className="o-form-foro" onSubmit={this.handlerButton}>
                 <label className="o-label-mensaje"> Escribe tu mensaje</label>
                 <textarea name="comentario" placeholder="Aquí va tu maravilloso mensaje" className ="o-comentario-foro" onChange={this.handlerOnChange}/>
                 <div className="Btn-forum">
-                <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>Publicar algo</button>
+                <button type="submit" class="btn btn-primary">Publicar algo</button>
                 </div>
             </form>
 
