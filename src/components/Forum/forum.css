@@ -1,9 +1,11 @@
 .Forum-container{
-    height: 100vh;
+    height: 45vw;
+   
     display: flex;
     flex-direction: row;
-    height: 100%;
+    
 }
+
 .ForumAll{
     display: flex;
     flex-direction: column;
@@ -12,7 +14,7 @@ textarea{
     resize: none;
 }
 .Forum-title{ 
-    margin: 3rem 0 1rem 3rem;  
+    margin: 2rem 0 1rem 3rem;  
     font-weight: bold;
     font-size: 24px;
     text-align: start;
@@ -21,8 +23,8 @@ textarea{
 }
 .Btn-forum{
     display: flex;
-    flex-direction: column;    
-    margin: 0 0 3rem 26rem;
+    justify-content: flex-end;   
+    margin: 0 0 1rem 26rem;
     width: 9.188rem;
 }
 
@@ -42,7 +44,7 @@ textarea{
     border: 1px solid #9A9A9A;
 }
 .TopUsers{
-    margin: 3rem 0 0 4rem;
+    margin: 2rem 0 0 4rem;
     width: 19.0625rem;
     height: 19.375rem;
     border: 2px solid #9A9A9A;

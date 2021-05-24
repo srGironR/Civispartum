@@ -29,7 +29,7 @@ function Main(){
                 </div>
             </div>
                 <div className="OtherMat">
-                <div className="Title-con">
+                <div className="Title-conT">
                     <b>Material Adicional</b>
                 </div>
                 <div className="Subjects">

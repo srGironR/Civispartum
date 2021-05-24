@@ -34,7 +34,7 @@ class  Profile extends React.Component{
 render(){
     return(
     <div className="ProfileAll">
-    <Sidebar className="Ssb"/>
+    <Sidebar/>
     <div className="PA">
         <div className="Profile-inPH">
             <div className="Profile-info">
