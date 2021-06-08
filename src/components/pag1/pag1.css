@@ -1,6 +1,8 @@
+
 .P1-Container{
-    margin: 0;
-    padding: 0;
+
+   margin: 0;
+   padding: 0;
 }
 
 .Banner{
@@ -9,27 +11,26 @@
     flex-direction: row;
     background: no-repeat;
     background-image: url('../pics/Banner.png');
-    background-position: 5% 0%;
+    background-position: 4% 0%;
     background-origin: content-box;
     background-size: 48vw auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #235390; 
     padding: 3rem;   
-    margin: 0;
+    
 
 }
 
 .Banner-text{ 
-    text-align: center;  
-    width: 40%;
-    margin: auto 0 auto auto ;  
+    text-align: center;      
+    margin: 8rem 0 0 44rem ;  
     font-family: 'Roboto';
     font-size: 40px;
     color: #fff;
 }
 .Button-Empieza{
-    margin: 12px auto 0 auto;
+    margin: 12px 0 0 44rem;
     width: 14.5rem;
     height: 3.5rem;
     font-family: 'Roboto';
@@ -59,7 +60,7 @@
     flex-direction: row;
     background: no-repeat;
     background-image: url('../pics/confundido.png');
-    background-position: 5% 0%;
+    background-position: 6% 0%;
     background-origin: content-box;
     background-size: 25vw auto;
     width: 100%;
@@ -128,7 +129,7 @@ hr.new4 {
 }
 .End-Container{
     background-color: #235390; 
-    height: 100vh;
+    height: 100%;
 }
 .Banner-text-end{
     display: flex;

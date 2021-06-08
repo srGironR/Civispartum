@@ -23,19 +23,20 @@ class VideoVoto extends React.Component {
                 <div className="Title-content">
                     <b className="TittleVidC">Mecanismos de Participación: El Voto.</b>
                     <p className="descriptVid">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam vehicula dui id tellus ullamcorper tristique. 
-                    Sed ut libero malesuada sem faucibus faucibus. 
-                    Aliquam et aliquet metus, sed cursus
+                    Una sociedad que quiere ser realmente democrática requiere de
+                    la participación activa y crítica de todos sus miembros. Esto implica
+                    que los ciudadanos deben poder estar involucrados en la construcción de acuerdos y en la toma de decisiones en todos los niveles.
+                    Es decir, que, en principio, el poder recae en los representados, quienes tienen distintos mecanismos para ejercer el control, y uno
+                    de estás herramientas es el Voto.
                     </p>
                 </div>
                 <div className="Concept-content">
-                    <b className="TittlConcept">Mecanismos de Participación: El Voto.</b>
+                    <b className="TittlConcept">Mecánicas del video interactivo</b>
                     <p className="descriptConcept">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam vehicula dui id tellus ullamcorper tristique. 
-                    Sed ut libero malesuada sem faucibus faucibus. 
-                    Aliquam et aliquet metus, sed cursus
+                    El video comienza cuando le das click en reproducir, el video se expandirá en pantalla 
+                    completa y alrededor de 3 minutos de teoría, comenzará una serie de preguntas sobre la información anterior dada. 
+                    No te distraigas cualquier información es valiosa para responder. ¡Que comience el juego!.
+
                     </p>
                 </div>
             </div>

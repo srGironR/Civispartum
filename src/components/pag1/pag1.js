@@ -13,7 +13,9 @@ import Face from "../pics/facebook.png"
 
 
 function pag1(){
+    
     return(
+        
         <div className="P1-Container">
             <Nnavbar/>
             <header className="Banner">              
