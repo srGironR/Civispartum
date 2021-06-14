@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "../Profile/profile.css"
 import Sidebar from "../Dashboard/Sidebar";
 import RCard from "../Profile/components/rewardCard";
