@@ -33,7 +33,7 @@ export default function Help(){
 
                     <div className="o-array">
                         <button onClick={() =>setShowFirst(true)} className="o-button-help">¿Qué es Civispartum?</button>
-                        <Modal show={showFirst} onHide={()=> setShowFirst(false)}>
+                        <Modal show={showFirst} onHide={()=> setShowFirst(false)}  centered>
                             <Modal.Header closeButton>
                                 ¿Qué es Civispartum?
                             </Modal.Header>
@@ -44,7 +44,7 @@ export default function Help(){
                         </Modal>  
 
                         <button onClick={()=>setShowSecond(true)} className="o-button-help">¿Cómo usar Civispartum?</button>
-                        <Modal show={showSecond} onHide={()=> setShowSecond(false)}>
+                        <Modal show={showSecond} onHide={()=> setShowSecond(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo usar Civispartum?
                             </Modal.Header>
@@ -55,7 +55,7 @@ export default function Help(){
                         </Modal>
 
                         <button onClick={()=>setShowThird(true)} className="o-button-help">¿Cuanto cuesta usar Civispartum?</button>
-                        <Modal show={showThird} onHide={()=> setShowThird(false)}>
+                        <Modal show={showThird} onHide={()=> setShowThird(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cuanto cuesta usar Civispartum?
                             </Modal.Header>
@@ -65,7 +65,7 @@ export default function Help(){
                         </Modal>   
 
                         <button onClick={()=>setShowFour(true)} className="o-button-help">¿Mi información está asegurada?</button>
-                        <Modal show={showFour} onHide={()=> setShowFour(false)}>
+                        <Modal show={showFour} onHide={()=> setShowFour(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Mi información está asegurada?
                             </Modal.Header>
@@ -84,7 +84,7 @@ export default function Help(){
                 <div className="bar"></div>
                 <div className="o-array">
                         <button onClick={() =>setShowSix(true)} className="o-button-help">¿Cómo gano premios?</button>
-                        <Modal show={showSix} onHide={()=> setShowSix(false)}>
+                        <Modal show={showSix} onHide={()=> setShowSix(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo gano premios?
                             </Modal.Header>
@@ -94,7 +94,7 @@ export default function Help(){
                         </Modal>  
 
                         <button onClick={()=>setShowSeven(true)} className="o-button-help">¿Cómo subo de nivel rápido?</button>
-                        <Modal show={showSeven} onHide={()=> setShowSeven(false)}>
+                        <Modal show={showSeven} onHide={()=> setShowSeven(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo subo de nivel rápido?
                             </Modal.Header>
@@ -104,7 +104,7 @@ export default function Help(){
                         </Modal>
 
                         <button onClick={()=>setShowEight(true)} className="o-button-help">¿Qué pasa si me quedó sin conexión?</button>
-                        <Modal show={showEight} onHide={()=> setShowEight(false)}>
+                        <Modal show={showEight} onHide={()=> setShowEight(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Qué pasa si me quedó sin conexión?
                             </Modal.Header>
@@ -120,7 +120,7 @@ export default function Help(){
                 <div className="bar"></div>
                 <div className="o-array">
                         <button onClick={() =>setShowNine(true)} className="o-button-help">¿Cómo reporto un problema con el contenido del vídeo?</button>
-                        <Modal show={showNine} onHide={()=> setShowNine(false)}>
+                        <Modal show={showNine} onHide={()=> setShowNine(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo reporto un problema con el contenido del vídeo?
                             </Modal.Header>
@@ -130,7 +130,7 @@ export default function Help(){
                         </Modal>  
 
                         <button onClick={()=>setShowTen(true)} className="o-button-help">¿Cómo reporto un error?</button>
-                        <Modal show={showTen} onHide={()=> setShowTen(false)}>
+                        <Modal show={showTen} onHide={()=> setShowTen(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo reporto un error?
                             </Modal.Header>
@@ -140,7 +140,7 @@ export default function Help(){
                         </Modal>
 
                         <button onClick={()=>setShowEleven(true)} className="o-button-help">¿Cómo adjunto un vídeo o una imagen de un problema?</button>
-                        <Modal show={showEleven} onHide={()=> setShowEleven(false)}>
+                        <Modal show={showEleven} onHide={()=> setShowEleven(false)} centered>
                             <Modal.Header closeButton>
                                 ¿Cómo adjunto un vídeo o una imagen de un problema?
                             </Modal.Header>

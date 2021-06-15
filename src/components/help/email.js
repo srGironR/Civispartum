@@ -1,8 +1,12 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import "./email.css";
+import {useState} from 'react';
+import Alert from 'react-bootstrap/Alert';
 
 function Email() {
+
+    const [showMess, setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -18,7 +22,7 @@ function Email() {
 
     return (
         <div className = "o-email-container">
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" onSubmit={sendEmail} onClick={() =>setShowMess}>
 
                 <label className="o-title-email">Nombre</label>
                 <input type="text" name="name" placeHolder="Escribe tu Nombre" className ="o-item-input"/>
@@ -31,6 +35,11 @@ function Email() {
 
                 <input type="submit" value="Enviar" className="o-input-email"/>
             </form>
+
+            <Alert color="success" >
+                Mensaje enviado, pronto nos estaremos comunicando contigo
+            </Alert>
+
         </div>
     )
 }
