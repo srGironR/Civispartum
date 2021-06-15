@@ -1,11 +1,8 @@
 import React from 'react';
 import SideBar from "../Dashboard/Sidebar";
-import ForumCard from "../Forum/components/forumcard"
-import UsersCard from "../Forum/components/usersCard"
-import "../Forum/forum.css"
-import ImgP1 from "../pics/image.png"
-import ImgP2 from "../pics/imagep2.png"
-import ImgP3 from "../pics/imagep3.png"
+import ForumCard from "../Forum/components/forumcard";
+import UsersCard from "../Forum/components/usersCard";
+import "../Forum/forum.css";
 import axios  from 'axios';
 import user from "../pics/user.png";
 

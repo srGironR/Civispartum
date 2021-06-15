@@ -1,6 +1,6 @@
 import React from 'react';
 import Nnavbar from "../navbar/navbar.js";
-import "../registro/registro.css"
+import "../registro/registro.css";
 import {Link} from 'react-router-dom';
 import backArrow from "../pics/left-arrosw.png"
 import axios from 'axios';

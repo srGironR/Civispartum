@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "../Profile/profile.css"
 import Sidebar from "../Dashboard/Sidebar";
 import RCard from "../Profile/components/rewardCard";
@@ -34,7 +34,7 @@ class  Profile extends React.Component{
 render(){
     return(
     <div className="ProfileAll">
-    <Sidebar className="Ssb"/>
+    <Sidebar/>
     <div className="PA">
         <div className="Profile-inPH">
             <div className="Profile-info">

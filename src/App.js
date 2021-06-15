@@ -12,18 +12,26 @@ import Video from "./components/Video/video.js";
 import FullVide from "./components/Video/FullVid.js";
 import P1 from "./components/Video/Questions/p1.js";
 import GoodA from "./components/Video/Questions/GoodAnswer";
-import BadA from "./components/Video/Questions/BadAnswer";
+import BadAns from "./components/Video/Questions/BadAnswer";
 import GoodC from "./components/Video/Questions/GoodC";
 import BadC from "./components/Video/Questions/BadC";
 import Case1 from "./components/Video/Questions/case1";
 import Case2 from "./components/Video/Questions/case2";
 import GoodE from "./components/Video/Questions/goodEnd";
 import BadE from "./components/Video/Questions/badEnd";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { createBrowserHistory } from 'history';
+
+import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
 import { Component } from "react";
 
 export default class App extends Component {
-/*
+  componentDidMount() {
+    window.history.pushState(null, document.title, window.location.href);
+    window.addEventListener('popstate', function (event){
+        window.history.pushState(null, document.title,  window.location.href);
+    });
+ }
+  /*
   constructor(){
     super();
     this.state ={
@@ -46,16 +54,16 @@ render(){
                 <Route path="/Foro" render={ props =>(<Forum{...props}/>)} />
                 <Route path="/Perfil" render={ props =>(<Profile{...props}/>)} />
                 <Route path="/Video" render={ props =>(<Video{...props}/>)} />
-                <Route path="/Fullvid" render={ props =>(<FullVide/>)} />
-                <Route path="/P1" render={ props =>(<P1/>)} />
-                <Route path="/Good" render={ props =>(<GoodA/>)} />
-                <Route path="/Bad" render={ props =>(<BadA/>)} />                
-                <Route path="/Case1" render={ props =>(<Case1/>)}/> 
-                <Route path="/GoodC" render={ props =>(<GoodC/>)} />
-                <Route path="/BadC" render={ props =>(<BadC/>)} />
-                <Route path="/Case2" render={ props =>(<Case2/>)}/> 
-                <Route path="/GoodE" render={ props =>(<GoodE/>)} />
-                <Route path="/BadE" render={ props =>(<BadE/>)} />
+                <Route path="/Fullvid" component={FullVide} />
+                <Route path="/P1" component={P1} />
+                <Route path="/Good" component={GoodA} />
+                <Route path="/Bad" component={BadAns} />                
+                <Route path="/Case1" component={Case1}/> 
+                <Route path="/GoodC" component={GoodC} />
+                <Route path="/BadC" component={BadC} />
+                <Route path="/Case2" component={Case2}/> 
+                <Route path="/GoodE" component={GoodE} />
+                <Route path="/BadE" component={BadE} />
               </div>
           </Switch>
       </BrowserRouter>
