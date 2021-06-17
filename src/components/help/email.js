@@ -22,7 +22,7 @@ function Email() {
 
     return (
         <div className = "o-email-container">
-            <form className="contact-form" onSubmit={sendEmail} onClick={() =>setShowMess}>
+            <form className="contact-form" onSubmit={sendEmail} >
 
                 <label className="o-title-email">Nombre</label>
                 <input type="text" name="name" placeHolder="Escribe tu Nombre" className ="o-item-input"/>
@@ -33,14 +33,17 @@ function Email() {
                 <label className="o-title-email">Mensaje</label>
                 <textarea name="message" placeholder="Escribe tu pregunta" className ="o-item-input"/>
 
-                <input type="submit" value="Enviar" className="o-input-email"/>
+                <input type="submit" value="Enviar" className="o-input-email" onClick={() =>setShowMess(true)}/>
             </form>
 
-            <Alert color="success" >
-                Mensaje enviado, pronto nos estaremos comunicando contigo
-            </Alert>
-
+            <div className="o-alert-container">
+                <Alert variant="success" show={showMess} onClose={() =>setShowMess(false)} dismissible>
+                    Mensaje enviado, pronto nos estaremos comunicando contigo
+                </Alert>
+            </div>
+            
         </div>
+       
     )
 }
 
