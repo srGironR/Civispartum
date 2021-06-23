@@ -49,8 +49,8 @@ export default function Help(){
                                 ¿Cómo usar Civispartum?
                             </Modal.Header>
                             <Modal.Body>
-                               A traves de videos interactivos, buscamos que todos los conceptos involucrados en los temas de competencias
-                               ciudadanas sean faciles de entender y de trasladar lo aprendido por medio de situaciones ejemplo 
+                            Por el momento se encuentra en etapa de pruebas y la forma de acceso, es a través de alguno de los equipos de los desarrolladores.
+                            En el futuro probablemente a traves de la web www.civispartum.com
                             </Modal.Body>
                         </Modal>
 
@@ -70,7 +70,7 @@ export default function Help(){
                                 ¿Mi información está asegurada?
                             </Modal.Header>
                             <Modal.Body>
-                                Toda la información que pedimos es exclusivamente para uso de la plataforma, y los datos que trackeamos
+                                Toda la información que pedimos es exclusivamente para uso de la plataforma, y los datos que obtenemos
                                 son exclusivos de la misma, tambien tenemos en cuenta la seguridad de los perfiles, por eso ciframos todas las 
                                 contraseñas que nos llegan
                             </Modal.Body>
@@ -109,7 +109,7 @@ export default function Help(){
                                 ¿Qué pasa si me quedó sin conexión?
                             </Modal.Header>
                             <Modal.Body>
-                                No sabemos XD jaja saludos (PD Al que ver esto como funciona)
+                                Por el momento no esta en un servidor accesible a través de internet por lo tanto no hay problemas de conexión
                             </Modal.Body>
                         </Modal>   
                     </div>
@@ -125,7 +125,7 @@ export default function Help(){
                                 ¿Cómo reporto un problema con el contenido del vídeo?
                             </Modal.Header>
                             <Modal.Body>
-                             En la parte de AYUDA, sube tu duda, esto nos enviara un correo, apenas lo veamos te responderemos ASAP
+                             En la parte de "ayuda", escribe tu duda, esto nos enviara un correo, apenas llegue te responderemos lo mas pronto posible
                             </Modal.Body>
                         </Modal>  
 
@@ -135,7 +135,7 @@ export default function Help(){
                                 ¿Cómo reporto un error?
                             </Modal.Header>
                             <Modal.Body>
-                             En la parte de AYUDA, sube tu duda, esto nos enviara un correo, apenas lo veamos te responderemos ASAP
+                            En la parte de "ayuda", escribe tu duda, esto nos enviara un correo, apenas llegue te responderemos lo mas pronto posible
                             </Modal.Body>
                         </Modal>
 
