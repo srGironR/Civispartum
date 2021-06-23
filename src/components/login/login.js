@@ -69,7 +69,7 @@ class Login extends React.Component{
            
             <div className="InI-cont">
             <div className="imageB">
-            <Link to="/Registro"><input type="image" className="imageB" alt="Back Arrow" src={backArrow}></input></Link>
+            <Link to="/"><input type="image" className="imageB" alt="Back Arrow" src={backArrow}></input></Link>
             </div>
                 <div className="ImL"></div>
                 <div className="InLo">
@@ -89,7 +89,7 @@ class Login extends React.Component{
                             {this.state.error === true &&
                             
                             <>
-                                <div class="form-check">
+                                <div class="o-form-check">
                                     <Alert variant = 'warning'>
                                         {this.state.errorMes}
                                     </Alert>
