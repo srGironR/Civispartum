@@ -11,7 +11,7 @@
     flex-direction: row;
     background: no-repeat;
     background-image: url('../pics/Banner.png');
-    background-position: 4% 0%;
+    background-position: 0% 0%;
     background-origin: content-box;
     background-size: 48vw auto;
     width: 100vw;
@@ -23,8 +23,12 @@
 }
 
 .Banner-text{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;      
-    margin: 8rem 0 0 44rem ;  
+    margin: 4.5rem 0 0 47.5rem ;  
     font-family: 'Roboto';
     font-size: 40px;
     color: #fff;
@@ -79,10 +83,12 @@
 }
 .Whytext{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 30rem;
     text-align: center;  
-    width: 60%;
-    margin: 0 0 auto auto ;  
+    width: 60%;  
     font-family: 'Roboto';
     font-size: 25px;
 }
@@ -114,10 +120,12 @@ hr.new4 {
   }
   .HoWork-container{
       margin-bottom: 5rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       flex-wrap: wrap;
-      
   }
 
 @media only screen and (max-width: 800px) {

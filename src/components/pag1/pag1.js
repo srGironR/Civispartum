@@ -27,29 +27,29 @@ function pag1(){
             <section className="Section-why"> 
             <div className="Whytext">        
                 <b className="title">¿Por qué aprender Competencias Ciudadanas con Civispartum?</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum 
-                    finibus magna non lobortis. Morbi mollis libero et sagittis consequat. Donec eu 
-                    condimentum libero, a sodales augue. Morbi et orci mi. Duis dolor tellus, pellentesque 
-                    sit amet viverra at, lobortis in risus. </p>   
+                <p>Entendemos que todas las personas tienen diferentes formas de aprender,
+                     por ello esta plataforma se presenta como una alternativa a lo tradicional, 
+                     utilizando elementos audiovisuales que pretenden dar una experiencia activa y entretenida, 
+                     con la cual se pueda adquirir y ampliar conocimientos de competencias ciudadanas.  </p>   
             </div>                    
             </section>  
             <hr class="new4" width="90%"  align="center"/> 
             <h1 className="Howtitle">¿Cómo funciona?</h1>  
             <div className="HoWork-container">             
-                <SCard step={"Paso#1"} 
+                <SCard step={"Paso 1"} 
                 descript={"Ingresa o Registrate pulsando el botón empieza ahora o en la barra de navegación de arriba, escribe tus datos y dale click en iniciar sesión."}
                 isrc={LoginI}
                 />
-                <SCard step={"Paso#2"} 
+                <SCard step={"Paso 2"} 
                 descript={"Revisa los temás que se exponén y aquel que quieras revisar dale click para entrar y ver contenido, cómo conceptos importantes y su importancia."}
                 isrc={FilesI}
                 />  
                 
-                <SCard step={"Paso#3"} 
+                <SCard step={"Paso 3"} 
                 descript={"Reproduce el video interactivo, esté contará diferentes situaciones con respecto al tema escogido y deberás responder, al terminar se desbloquea un final con respecto a las respuestas y se da un puntaje. (Sólo se puede reproducir un video una vez, pero puedes repasar la infomarción de esta en la parte de concepto importante)."}
                 isrc={VideoI}
                 />
-                <SCard step={"Paso#4"} 
+                <SCard step={"Paso 4"} 
                 descript={"Dependiendo de que decisión tomás se te darán logros, premiando a las buenas desiciones con Medallas y la oportunidad de repetir videos anteriores( sólo una vez más) para mejorar el puntaje para competir contra otros."}
                 isrc={MedalI}
                 />                 

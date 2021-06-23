@@ -9,7 +9,7 @@ const StepCard = (props) =>{
        <div className="StO">        
         <img  className="imgO" src={isrc} alt=""></img>
         <div className="DescO">
-            <b>{step}</b>
+            <b className="o-title-step-card">{step}</b>
             <p>{descript}</p>
         </div>
     </div>
