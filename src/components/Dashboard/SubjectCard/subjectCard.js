@@ -2,7 +2,6 @@ import React from "react"
 import "../SubjectCard/subjectCard.css"
 
 const subjectCard = (props) =>{
-    console.log("Temas",props);
     //Destructuring
   const{ Tema, isrcT}=props;
   return(

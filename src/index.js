@@ -7,15 +7,15 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
-    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin></script>
 
     <script
     src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-    crossorigin></script>
+    crossOrigin></script>
 
   <script
     src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-    crossorigin></script>
+    crossOrigin></script>
 
   <script>var Alert = ReactBootstrap.Alert;</script>
     <App />

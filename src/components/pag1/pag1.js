@@ -21,7 +21,7 @@ function pag1(){
             <header className="Banner">              
                 <div className="Banner-text"> 
                     <b>Aprende Competencias Ciudadanas de forma creativa y rápida</b>
-                    <Link to="/Registro"><button type="button" class="btn btn-warning Button-Empieza">Empieza ahora</button> </Link>                
+                    <Link to="/Registro"><button type="button" className="btn btn-warning Button-Empieza">Empieza ahora</button> </Link>                
                 </div>                
             </header> 
             <section className="Section-why"> 
@@ -57,7 +57,7 @@ function pag1(){
             <div className="End-Container">
                 <div className="Banner-text-end"> 
                     <b>Aprende Competencias Ciudadanas de forma creativa y rápida</b>
-                    <Link to="/Registro"><button type="button" class="btn btn-warning Button-Empieza-end">Empieza ahora</button></Link>               
+                    <Link to="/Registro"><button type="button" className="btn btn-warning Button-Empieza-end">Empieza ahora</button></Link>               
                 </div> 
             
            <footer className="FinalT">

@@ -4,7 +4,7 @@ import "./email.css";
 import {useState} from 'react';
 import Alert from 'react-bootstrap/Alert';
 
-function Email() {
+function Email({servicesId, templateId, userId}) {
 
     const [showMess, setShowMess] = useState(false);
 

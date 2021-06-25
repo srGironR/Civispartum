@@ -4,18 +4,17 @@ import Heart from '@material-ui/icons/FavoriteBorder';
 import HeartF from '@material-ui/icons/Favorite';
 
 const ForumCard = (props) =>{
-    console.log("Publicaciones",props);
     //Destructuring
   const{isrc, descript, timeD, likesD}=props;
   return(
        <div className="o-Card">        
         <img  className="imgP" src={isrc} alt=""></img>
         <div className="DescF">
-            <a>{descript}</a>
+            <p className="o-text-forum-card">{descript}</p>
             <p className="TimeDe">{timeD}</p>
             <div className="likes">
               <div ><Heart/></div>
-              <a>{likesD}</a>
+              <p className="o-text-forum-card">{likesD}</p>
               </div>
         </div>
     </div>

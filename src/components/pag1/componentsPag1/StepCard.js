@@ -2,7 +2,6 @@ import React from "react"
 import "../componentsPag1/StepCard.css"
 
 const StepCard = (props) =>{
-    console.log("Descripción",props);
     //Destructuring
   const{step, descript, isrc}=props;
   return(

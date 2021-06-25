@@ -79,11 +79,11 @@ class Login extends React.Component{
                     </div>
                     <div className="Info-Container">
                     <form onSubmit={this.handlerSubmit}>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
+                        <div className="form-group">
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"  name="contrasenaEst" onChange={this.handlerOnChange}></input>
+                        <div className="form-group">
+                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Contraseña"  name="contrasenaEst" onChange={this.handlerOnChange}></input>
                         </div>
                         
                             {this.state.error === true &&
@@ -98,7 +98,7 @@ class Login extends React.Component{
                             </>
                             }
 
-                        <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button>
+                        <button type="submit" className="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button>
 
                     </form>
                     </div>                  
