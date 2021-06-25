@@ -3,7 +3,6 @@ import "../components/usersCard.css"
 import Medal from '../components/medal.png'
 
 const UsersCard = (props) =>{
-    console.log("Usuarios",props);
     //Destructuring
   const{isrc, Name, timeU, Level}=props;
   return(

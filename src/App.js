@@ -48,12 +48,12 @@ render(){
                 <Route exact path= {"/"} render={props =>(<Pag1{...props}/>)}/>
                 <Route exact path="/Registro" render ={ props =>(<Register{...props}/>)}/>
                 <Route exact path="/Login" render={ props =>(<Login{...props}/>)}/>
-                <Route path="/Temas" render={ props =>(<Mmain{...props}/>)} />
-                <Route path="/Estadisticas" render={ props=>(<Std{...props}/>)} />
-                <Route path="/Ayuda" render ={ props =>(<Help{...props}/>)} />
-                <Route path="/Foro" render={ props =>(<Forum{...props}/>)} />
-                <Route path="/Perfil" render={ props =>(<Profile{...props}/>)} />
-                <Route path="/Video" render={ props =>(<Video{...props}/>)} />
+                <Route exact path="/Temas" render={ props =>(<Mmain{...props}/>)} />
+                <Route exact path="/Estadisticas" render={ props=>(<Std{...props}/>)} />
+                <Route exact path="/Ayuda" render ={ props =>(<Help{...props}/>)} />
+                <Route exact path="/Foro" render={ props =>(<Forum{...props}/>)} />
+                <Route exact path="/Perfil" render={ props =>(<Profile{...props}/>)} />
+                <Route exact path="/Video" render={ props =>(<Video{...props}/>)} />
                 <Route path="/Fullvid" component={FullVide} />
                 <Route path="/P1" component={P1} />
                 <Route path="/Good" component={GoodA} />
