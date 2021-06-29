@@ -19,6 +19,7 @@ import Case1 from "./components/Video/Questions/case1";
 import Case2 from "./components/Video/Questions/case2";
 import GoodE from "./components/Video/Questions/goodEnd";
 import BadE from "./components/Video/Questions/badEnd";
+import Password from "./components/login/password";
 import { createBrowserHistory } from 'history';
 
 import { BrowserRouter, Route, Switch, Redirect, withRouter } from "react-router-dom";
@@ -54,6 +55,7 @@ render(){
                 <Route exact path="/Foro" render={ props =>(<Forum{...props}/>)} />
                 <Route exact path="/Perfil" render={ props =>(<Profile{...props}/>)} />
                 <Route exact path="/Video" render={ props =>(<Video{...props}/>)} />
+                <Route exact path="/Password" render={ props =>(<Password{...props}/>)}/>
                 <Route path="/Fullvid" component={FullVide} />
                 <Route path="/P1" component={P1} />
                 <Route path="/Good" component={GoodA} />

@@ -9,11 +9,6 @@ import Alert from 'react-bootstrap/Alert';
 
 class Login extends React.Component{
     
-
-    constructor(props){
-        super(props);
-    }
-
     state ={
         form:{
             "nombreEst":"",
@@ -57,12 +52,10 @@ class Login extends React.Component{
                 errorMes : "Error del servicio"
             })
         })
-
     }
-
     render(){
-        
     return(
+        
         <React.Fragment>
         <div className="Login-container">
            <Nnavbar></Nnavbar>
@@ -87,13 +80,12 @@ class Login extends React.Component{
                         </div>
                         
                             {this.state.error === true &&
-                            
                             <>
-                                <div class="o-form-check">
+                                <div className="o-form-check">
                                     <Alert variant = 'warning'>
                                         {this.state.errorMes}
                                     </Alert>
-                                    <a className="Pw-Co" href="https://www.w3schools.com">¿Olvidó su contraseña?</a>
+                                    <Link to="/Password"><span className="Pw-Co" href="https://www.w3schools.com">¿Olvidó su contraseña?</span></Link>
                                 </div>
                             </>
                             }

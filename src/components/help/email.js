@@ -4,14 +4,15 @@ import "./email.css";
 import {useState} from 'react';
 import Alert from 'react-bootstrap/Alert';
 
-function Email({servicesId, templateId, userId}) {
+
+function Email({servicesId, templateId, userId, placeHold}) {
 
     const [showMess, setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('service_3nzuy98', 'template_zvnyotj', e.target, 'user_mkYW0C88rMN6ewelPuFHl')
+        emailjs.sendForm(servicesId, templateId, e.target, userId)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -31,7 +32,7 @@ function Email({servicesId, templateId, userId}) {
                 <input type="email" name="email" placeHolder="Escribe tu Correo" className ="o-item-input"/>
 
                 <label className="o-title-email">Mensaje</label>
-                <textarea name="message" placeholder="Escribe tu pregunta" className ="o-item-input"/>
+                <textarea name="message" placeholder={placeHold} className ="o-item-input"/>
 
                 <input type="submit" value="Enviar" className="o-input-email" onClick={() =>setShowMess(true)}/>
             </form>

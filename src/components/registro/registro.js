@@ -8,9 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 
 class Register extends React.Component{
 
-    constructor(props){
-        super(props);
-    }
+
 
     state = {
         form:{

@@ -25,7 +25,7 @@ export default function Help(){
         <div className="Fcontent">
             <div className="Search">
                 <b className="Help-title">Centro de ayuda de Civispatrum</b>
-                <Email/>
+                <Email servicesId="service_3nzuy98" templateId="template_zvnyotj"  userId="user_mkYW0C88rMN6ewelPuFHl" placeHold="Escribe tu Pregunta"/>
             </div>
                 <div className="FAsks">
                     <p className="FAks-title">Preguntas frecuentes</p>
