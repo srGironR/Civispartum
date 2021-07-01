@@ -1,0 +1,36 @@
+.Good-place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+.Bad-place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+.Title-ans{
+    margin-top: 3rem;
+    font-size: 48px;
+    color: white;
+}
+.ttS:link{
+    text-decoration: none;
+}
+.btnSgt{
+    
+    margin-top: 3rem;
+    width: 10rem;
+    font-size: 24px;
+    color: white;
+    border-radius: 15px;    
+    transition: all 0.4s;
+    background-color: #235390;
+}
+.btnSgt:hover{
+    cursor: pointer;
+    background-color: #DBC01F;
+}

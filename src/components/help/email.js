@@ -7,7 +7,7 @@ import Alert from 'react-bootstrap/Alert';
 
 function Email({servicesId, templateId, userId, placeHold}) {
 
-    const [showMess, setShowMess] = useState(false);
+    const [setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -42,7 +42,9 @@ function Email({servicesId, templateId, userId, placeHold}) {
                     Mensaje enviado, pronto nos estaremos comunicando contigo
                 </Alert>
             </div>
-            
+     
+     
+
         </div>
        
     )

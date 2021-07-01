@@ -1,0 +1,40 @@
+.ContentVideo-all{
+    height: 100vh;
+    background-color: black;
+}
+.info-content{
+    display: flex;
+    flex-direction: row;
+}
+.infoVid{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    margin: 6rem 0 0 3rem;
+}
+.Title-content{
+    width: 30rem;
+    margin-bottom: 5rem;
+}
+.TittleVidC{
+    font-size: 36px;
+    color: white;
+}
+.descriptVid{
+    color: gray;
+    width: 30rem;
+}
+.TittlConcept{
+    width: 30rem;
+    font-size: 24px;
+    color: white;
+}
+.descriptConcept{
+    color: gray;
+    width: 30rem;
+}
+.VideoV{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}

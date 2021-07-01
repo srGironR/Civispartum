@@ -8,8 +8,6 @@ import Alert from 'react-bootstrap/Alert';
 
 class Register extends React.Component{
 
-
-
     state = {
         form:{
             "nombreEst":"",
