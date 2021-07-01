@@ -8,7 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 
 
 class Login extends React.Component{
-   
+
     state ={
         form:{
             "nombreEst":"",
@@ -52,19 +52,17 @@ class Login extends React.Component{
                 errorMes : "Error del servicio"
             })
         })
-
     }
-
     render(){
-        
     return(
+        
         <React.Fragment>
         <div className="Login-container">
            <Nnavbar></Nnavbar>
            
             <div className="InI-cont">
             <div className="imageB">
-            <Link to="/Registro"><input type="image" className="imageB" alt="Back Arrow" src={backArrow}></input></Link>
+            <Link to="/"><input type="image" className="imageB" alt="Back Arrow" src={backArrow}></input></Link>
             </div>
                 <div className="ImL"></div>
                 <div className="InLo">
@@ -74,26 +72,25 @@ class Login extends React.Component{
                     </div>
                     <div className="Info-Container">
                     <form onSubmit={this.handlerSubmit}>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
+                        <div className="form-group">
+                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario" name="nombreEst" onChange={this.handlerOnChange}></input>
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"  name="contrasenaEst" onChange={this.handlerOnChange}></input>
+                        <div className="form-group">
+                            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Contraseña"  name="contrasenaEst" onChange={this.handlerOnChange}></input>
                         </div>
                         
                             {this.state.error === true &&
-                            
                             <>
-                                <div class="form-check">
+                                <div className="o-form-check">
                                     <Alert variant = 'warning'>
                                         {this.state.errorMes}
                                     </Alert>
-                                    <a className="Pw-Co" href="https://www.w3schools.com">¿Olvidó su contraseña?</a>
+                                    <Link to="/Password"><span className="Pw-Co" href="https://www.w3schools.com">¿Olvidó su contraseña?</span></Link>
                                 </div>
                             </>
                             }
 
-                        <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button>
+                        <button type="submit" className="btn btn-primary" onClick={this.handlerButton}>INGRESAR</button>
 
                     </form>
                     </div>                  

@@ -57,7 +57,7 @@ class Forum extends React.Component {
     }
     
       componentDidMount() {
-        axios.get(`http://localhost:8080/usuario/foro/comentarios/ultimo`)
+        axios.get('http://localhost:8080/usuario/foro/comentarios/ultimo')
           .then(res => {
             const comments = res.data;
             this.setState({ comments });
@@ -93,7 +93,7 @@ class Forum extends React.Component {
                     <ForumCard isrc={user} descript={comments.comentario} timeD={"Escrito por "+comments.nombreUser} likesD={comments.numeroLikes} />
                     <div className="bar-F"></div>
                 </>
-                    )}
+                )}
             </div>
         </div>
         </div>

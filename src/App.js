@@ -19,6 +19,7 @@ import Case1 from "./components/Video/Questions/case1";
 import Case2 from "./components/Video/Questions/case2";
 import GoodE from "./components/Video/Questions/goodEnd";
 import BadE from "./components/Video/Questions/badEnd";
+import Password from "./components/login/password";
 import Video2 from "./components/Video2/video2.js";
 import FullVide2 from "./components/Video2/Fullvid2.js";
 import V2P1 from "./components/Video2/Questions/v2p1.js";
@@ -33,6 +34,7 @@ import badv2p3 from "./components/Video2/Questions/badv2p3.js";
 import badv2p4 from "./components/Video2/Questions/badv2p4.js";
 import gudv2p4 from "./components/Video2/Questions/gudv2p4.js";
 import v2p4 from "./components/Video2/Questions/v2p4.js";
+
 
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import { Component } from "react";
@@ -61,12 +63,13 @@ render(){
                 <Route exact path= {"/"} render={props =>(<Pag1{...props}/>)}/>
                 <Route exact path="/Registro" render ={ props =>(<Register{...props}/>)}/>
                 <Route exact path="/Login" render={ props =>(<Login{...props}/>)}/>
-                <Route path="/Temas" render={ props =>(<Mmain{...props}/>)} />
-                <Route path="/Estadisticas" render={ props=>(<Std{...props}/>)} />
-                <Route path="/Ayuda" render ={ props =>(<Help{...props}/>)} />
-                <Route path="/Foro" render={ props =>(<Forum{...props}/>)} />
-                <Route path="/Perfil" render={ props =>(<Profile{...props}/>)} />
-                <Route path="/Video" render={ props =>(<Video{...props}/>)} />
+                <Route exact path="/Temas" render={ props =>(<Mmain{...props}/>)} />
+                <Route exact path="/Estadisticas" render={ props=>(<Std{...props}/>)} />
+                <Route exact path="/Ayuda" render ={ props =>(<Help{...props}/>)} />
+                <Route exact path="/Foro" render={ props =>(<Forum{...props}/>)} />
+                <Route exact path="/Perfil" render={ props =>(<Profile{...props}/>)} />
+                <Route exact path="/Video" render={ props =>(<Video{...props}/>)} />
+                <Route exact path="/Password" render={ props =>(<Password{...props}/>)}/>
                 <Route path="/Fullvid" component={FullVide} />
                 <Route path="/P1" component={P1} />
                 <Route path="/Good" component={GoodA} />

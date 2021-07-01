@@ -4,14 +4,15 @@ import "./email.css";
 import {useState} from 'react';
 import Alert from 'react-bootstrap/Alert';
 
-function Email() {
+
+function Email({servicesId, templateId, userId, placeHold}) {
 
     const [setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('service_3nzuy98', 'template_zvnyotj', e.target, 'user_mkYW0C88rMN6ewelPuFHl')
+        emailjs.sendForm(servicesId, templateId, e.target, userId)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -22,7 +23,7 @@ function Email() {
 
     return (
         <div className = "o-email-container">
-            <form className="contact-form" onSubmit={sendEmail} onClick={() =>setShowMess}>
+            <form className="contact-form" onSubmit={sendEmail} >
 
                 <label className="o-title-email">Nombre</label>
                 <input type="text" name="name" placeHolder="Escribe tu Nombre" className ="o-item-input"/>
@@ -31,16 +32,21 @@ function Email() {
                 <input type="email" name="email" placeHolder="Escribe tu Correo" className ="o-item-input"/>
 
                 <label className="o-title-email">Mensaje</label>
-                <textarea name="message" placeholder="Escribe tu pregunta" className ="o-item-input"/>
+                <textarea name="message" placeholder={placeHold} className ="o-item-input"/>
 
-                <input type="submit" value="Enviar" className="o-input-email"/>
+                <input type="submit" value="Enviar" className="o-input-email" onClick={() =>setShowMess(true)}/>
             </form>
 
-            <Alert className="alertS" color="success" >
-                Mensaje enviado, pronto nos estaremos comunicando contigo
-            </Alert>
+            <div className="o-alert-container">
+                <Alert variant="success" show={showMess} onClose={() =>setShowMess(false)} dismissible>
+                    Mensaje enviado, pronto nos estaremos comunicando contigo
+                </Alert>
+            </div>
+     
+     
 
         </div>
+       
     )
 }
 

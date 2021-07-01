@@ -2,7 +2,6 @@ import React from "react"
 import "../components/QCard.css"
 
 const QCard = (props) =>{
-    console.log("Repuestas",props);
     //Destructuring
   const{descript}=props;
   return(

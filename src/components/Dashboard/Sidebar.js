@@ -11,7 +11,7 @@ function Sidebar(){
    
     <div className="Sidebar">
        <Link to="/Temas"> <div className="Logo">
-            <p lassName="LogoT">Civispartum</p>
+            <p className="LogoT">Civispartum</p>
         </div></Link>
         <Link to="/Perfil"><div className="Perfil">
             <img className="PicP" src={user} alt="Imagen de perfil"></img>

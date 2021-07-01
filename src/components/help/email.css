@@ -39,3 +39,12 @@
     border: black;
     border-width: 5px;
 }
+
+.o-alert-container{
+    margin-top: 5rem;
+    margin-left: 0.7rem;
+    position: absolute;
+    width: 20rem;
+    z-index: 5;
+   
+}

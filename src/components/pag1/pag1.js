@@ -21,43 +21,43 @@ function pag1(){
             <header className="Banner">              
                 <div className="Banner-text"> 
                     <b>Aprende Competencias Ciudadanas de forma creativa y rápida</b>
-                    <Link to="/Registro"><button type="button" class="btn btn-warning Button-Empieza">Empieza ahora</button> </Link>                
+                    <Link to="/Registro"><button type="button" className="btn btn-warning Button-Empieza">Empieza ahora</button> </Link>                
                 </div>                
             </header> 
             <section className="Section-why"> 
             <div className="Whytext">        
                 <b className="title">¿Por qué aprender Competencias Ciudadanas con Civispartum?</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum 
-                    finibus magna non lobortis. Morbi mollis libero et sagittis consequat. Donec eu 
-                    condimentum libero, a sodales augue. Morbi et orci mi. Duis dolor tellus, pellentesque 
-                    sit amet viverra at, lobortis in risus. </p>   
+                <p>Entendemos que todas las personas tienen diferentes formas de aprender,
+                     por ello esta plataforma se presenta como una alternativa a lo tradicional, 
+                     utilizando elementos audiovisuales que pretenden dar una experiencia activa y entretenida, 
+                     con la cual se pueda adquirir y ampliar conocimientos de competencias ciudadanas.  </p>   
             </div>                    
             </section>  
             <hr class="new4" width="90%"  align="center"/> 
             <h1 className="Howtitle">¿Cómo funciona?</h1>  
             <div className="HoWork-container">             
-                <SCard step={"Paso#1"} 
-                descript={"Ingresa o Registrate pulsando el botón empieza ahora o en la barra de navegación de arriba, escribe tus datos y dale click en iniciar sesión."}
+                <SCard step={"Paso 1"} 
+                descript={"Registrate pulsando el botón “Empieza ahora” o directamente en la parte superior en el botón registrate, escribe tus datos y luego inicia sesión."}
                 isrc={LoginI}
                 />
-                <SCard step={"Paso#2"} 
-                descript={"Revisa los temás que se exponén y aquel que quieras revisar dale click para entrar y ver contenido, cómo conceptos importantes y su importancia."}
+                <SCard step={"Paso 2"} 
+                descript={"Revisa los contenidos escoge el que mas te llame la atención y dale click, cada uno cuenta con un video y textos de apoyo."}
                 isrc={FilesI}
                 />  
                 
-                <SCard step={"Paso#3"} 
-                descript={"Reproduce el video interactivo, esté contará diferentes situaciones con respecto al tema escogido y deberás responder, al terminar se desbloquea un final con respecto a las respuestas y se da un puntaje. (Sólo se puede reproducir un video una vez, pero puedes repasar la infomarción de esta en la parte de concepto importante)."}
+                <SCard step={"Paso 3"} 
+                descript={"Reproduce el video interactivo, esté contará con diferentes situaciones de acuerdo al tema escogido, en ellas deberás responder a ciertos problemas que se plantean, al terminar se desbloquea un final con respecto a tus respuestas y se da un puntaje."}
                 isrc={VideoI}
                 />
-                <SCard step={"Paso#4"} 
-                descript={"Dependiendo de que decisión tomás se te darán logros, premiando a las buenas desiciones con Medallas y la oportunidad de repetir videos anteriores( sólo una vez más) para mejorar el puntaje para competir contra otros."}
+                <SCard step={"Paso 4"} 
+                descript={"Dependiendo de tus respuestas se te darán puntos, premiando a las buenas desiciones con Medallas y la oportunidad de subir de nivel compitiendo con los demas usuarios y amigos de la plataforma."}
                 isrc={MedalI}
                 />                 
             </div>
             <div className="End-Container">
                 <div className="Banner-text-end"> 
                     <b>Aprende Competencias Ciudadanas de forma creativa y rápida</b>
-                    <Link to="/Registro"><button type="button" class="btn btn-warning Button-Empieza-end">Empieza ahora</button></Link>               
+                    <Link to="/Registro"><button type="button" className="btn btn-warning Button-Empieza-end">Empieza ahora</button></Link>               
                 </div> 
             
            <footer className="FinalT">
