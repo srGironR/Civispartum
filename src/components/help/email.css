@@ -7,7 +7,9 @@
     display:flex;
     flex-direction: column;
 }
-
+.alertS{
+    margin-bottom: -2rem;
+}
 .o-item-input{
     display:flex;
     margin-bottom: .7rem;

@@ -8,12 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 
 
 class Login extends React.Component{
-    
-
-    constructor(props){
-        super(props);
-    }
-
+   
     state ={
         form:{
             "nombreEst":"",

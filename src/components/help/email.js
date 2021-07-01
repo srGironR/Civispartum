@@ -6,7 +6,7 @@ import Alert from 'react-bootstrap/Alert';
 
 function Email() {
 
-    const [showMess, setShowMess] = useState(false);
+    const [setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -36,7 +36,7 @@ function Email() {
                 <input type="submit" value="Enviar" className="o-input-email"/>
             </form>
 
-            <Alert color="success" >
+            <Alert className="alertS" color="success" >
                 Mensaje enviado, pronto nos estaremos comunicando contigo
             </Alert>
 

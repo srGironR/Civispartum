@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Dashboard/Sidebar.css"
 import {SidebarData} from './SidebarData'
-import ImgP from "../pics/image.png";
+
 import {Link} from 'react-router-dom';
 import user from "../pics/user.png";
 

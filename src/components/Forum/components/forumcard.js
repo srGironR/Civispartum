@@ -1,7 +1,7 @@
 import React from "react"
 import "../components/forumcard.css"
 import Heart from '@material-ui/icons/FavoriteBorder';
-import HeartF from '@material-ui/icons/Favorite';
+
 
 const ForumCard = (props) =>{
     console.log("Publicaciones",props);
@@ -11,11 +11,11 @@ const ForumCard = (props) =>{
        <div className="o-Card">        
         <img  className="imgP" src={isrc} alt=""></img>
         <div className="DescF">
-            <a>{descript}</a>
+            <p1>{descript}</p1>
             <p className="TimeDe">{timeD}</p>
             <div className="likes">
               <div ><Heart/></div>
-              <a>{likesD}</a>
+              <p1>{likesD}</p1>
               </div>
         </div>
     </div>

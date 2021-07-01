@@ -2,7 +2,7 @@ import SideBar from "../Dashboard/Sidebar";
 import SubjeCard from "../Dashboard/SubjectCard/subjectCard";
 import "../Dashboard/main.css";
 import imgV from "../pics/Voto.png"
-import Ilp from "../pics/ilp.jpg"
+import Ilp from "../pics/refe.png"
 import Plebiscito from "../pics/plebiscito.jpg"
 import CP from "../pics/cp.jpg"
 import DH from "../pics/derechos-humanos.jpg"
@@ -23,7 +23,7 @@ function Main(){
                 </div>
                 <div className="Subjects">
                    <Link to="/Video"><SubjeCard Tema="El voto" isrcT={imgV}></SubjeCard></Link>
-                    <SubjeCard Tema="La iniciativa legislativa" isrcT={Ilp}></SubjeCard>
+                   <Link to="/Video2"><SubjeCard Tema="El referendo" isrcT={Ilp}></SubjeCard></Link> 
                     <SubjeCard Tema="El plebiscito" isrcT={Plebiscito}></SubjeCard>
                     <SubjeCard Tema="La consulta popular" isrcT={CP}></SubjeCard>
                 </div>
