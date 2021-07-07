@@ -7,7 +7,7 @@ import Alert from 'react-bootstrap/Alert';
 
 function Email({servicesId, templateId, userId, placeHold}) {
 
-    const [setShowMess] = useState(false);
+    const [showMess, setShowMess] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();

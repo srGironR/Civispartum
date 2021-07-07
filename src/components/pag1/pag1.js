@@ -33,7 +33,7 @@ function pag1(){
                      con la cual se pueda adquirir y ampliar conocimientos de competencias ciudadanas.  </p>   
             </div>                    
             </section>  
-            <hr class="new4" width="90%"  align="center"/> 
+            <hr className="new4" width="90%"  align="center"/> 
             <h1 className="Howtitle">¿Cómo funciona?</h1>  
             <div className="HoWork-container">             
                 <SCard step={"Paso 1"} 
