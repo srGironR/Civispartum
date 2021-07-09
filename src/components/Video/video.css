@@ -24,6 +24,7 @@
 .descriptVid{
     color: gray;
     width: 30rem;
+    text-align: justify;
 }
 .TittlConcept{
     width: 30rem;
@@ -33,7 +34,14 @@
 .descriptConcept{
     color: gray;
     width: 30rem;
+    text-align: justify;
 }
+
+.o-video-container-first{
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
 .VideoV{
     margin-top: 2rem;
     margin-left: 3rem;
