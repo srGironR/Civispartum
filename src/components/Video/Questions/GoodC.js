@@ -1,36 +1,26 @@
-import "../Questions/Good.css"
-import {Link} from 'react-router-dom';
-import React, { Component } from 'react';
+import "../Questions/Good.css";
+import { Link } from "react-router-dom";
+import React, { Component } from "react";
 import axios from "axios";
-import {withRouter} from 'react-router-dom';
-  
-  var currentdate = new Date(); 
-  var datetime =    currentdate.getFullYear() + "-"
-                  + (currentdate.getMonth()+1)  + "-" 
-                  + currentdate.getDate() + " "  
-                  + currentdate.getHours() + ":"  
-                  + currentdate.getMinutes() + ":" 
-                  + currentdate.getSeconds();
+import { withRouter } from "react-router-dom";
+
+
 
 class GoodC extends Component {
 
-        
-  state ={
-    
-    form1:{
-      "nombreEst":localStorage.getItem("NombreUsuario"),
-      "fechaRegistro": datetime,
-      "actividad": "Video Voto"
+  state = {
+    form: {
+      nombreEst: localStorage.getItem("NombreUsuario"),
+      puntaje: 20,
+      descripcionPuntaje: "Pregunta 2 Voto",
     },
-    error:false,
-    errorMes:"",
+    error: false,
+    errorMes: "",
   }
 
-
-
-    handlerButton2 =()=>{
-        let url1 = 'http://localhost:8080/usuario/registro/new';
-        axios.post(url1, this.state.form1)
+  handlerButton = () =>{
+    let url = 'http://localhost:8080/usuario/puntaje/new';
+    axios.post(url, this.state.form)
     .then(response =>{
         if(response.data === "Ok"){
             console.log("ok");
@@ -48,16 +38,23 @@ class GoodC extends Component {
             errorMes : "Error del servicio"
         })
     })
-    }
 
-    render() {
-        return (
-        <div className="Good-place">
-        <div className="Title-ans"><b>Respuesta Correcta</b></div>
-        <Link className="ttS" to="/Case2"><button className="btnSgt" onClick={this.handlerButton2}><p>Siguiente</p></button></Link>
+  }
+
+  render() {
+    return (
+      <div className="Good-place">
+        <div className="Title-ans">
+          <b>Respuesta Correcta</b>
         </div>
-        );
-    }
+        <Link className="ttS" to="/Case2">
+          <button className="btnSgt" onClick={this.handlerButton}>
+            <p>Siguiente</p>
+          </button>
+        </Link>
+      </div>
+    );
+  }
 }
 
-export default withRouter(GoodC);;
+export default withRouter(GoodC);
