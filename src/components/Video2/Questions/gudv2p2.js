@@ -12,7 +12,7 @@ class Gudv2p2 extends Component {
       form2:{
         "nombreEst":localStorage.getItem("NombreUsuario"),
         "puntaje": 20,
-        "descripcionPuntaje":"Pregunta 1 Referendo"
+        "descripcionPuntaje":"Pregunta 2 Referendo"
       },
       error:false,
       errorMes:"",

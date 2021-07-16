@@ -8,7 +8,6 @@ import ReactPlayer from 'react-player'
 class GoodFinal extends React.Component { 
     changeThis () {
         window.location = "/Temas";
-        
         console.log("Ended");
     }
 
