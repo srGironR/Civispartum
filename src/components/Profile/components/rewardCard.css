@@ -25,9 +25,7 @@
     color: #434343;
 }
 .Progress{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 10rem;
 }
 .barS{    
     width: 138px;

@@ -13,14 +13,16 @@ import axios from 'axios';
 
 
 
+
 class  Profile extends React.Component{
 
     state ={
-        registro:[]
-        
+        registro:[],
+        puntaje:[]
     }
 
     componentDidMount() {
+        let url1 = 'http://localhost:8080/usuario/puntaje/'+localStorage.getItem("NombreUsuario");
         let url = 'http://localhost:8080/usuario/registro/'+localStorage.getItem("NombreUsuario");
         axios.get(url)
           .then(res => {
@@ -28,10 +30,19 @@ class  Profile extends React.Component{
             this.setState({ registro });
             console.log(registro);
           })
+          axios.get(url1)
+              .then(res =>{
+                  const puntaje = res.data;
+                  this.setState({puntaje});
+                  console.log(puntaje);
+              })
+          
       }
+      
       
   
 render(){
+    
     return(
     <div className="ProfileAll">
     <Sidebar/>
@@ -66,11 +77,14 @@ render(){
                 <div className="Prof-ReAr">
                     <p className="RTittle">Premios y logros</p>
                     <div className="bar-P"></div>
+                   
                     <div className="cardsP">
-                    <RCard isrc={Wise} descript="Completa 1 vídeo sin errores" score="0"/>
+                    {this.state.puntaje.map(puntaje=>               
+                    <RCard isrc={Wise} descript="Completa 1 vídeo sin errores" score={puntaje.puntaje}/>)}                
                     <RCard isrc={Medal} descript="Completa al menos un vídeo con un puntaje de 5 " score="0"/>
-                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="1"/>   
-                    </div>      
+                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="20"/>   
+                    </div>  
+                     
                 </div>
                 
             </div>           

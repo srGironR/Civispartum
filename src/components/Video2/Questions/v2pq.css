@@ -14,7 +14,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
   margin-top: 24rem;
+ 
   z-index: 1;   
 }
 .QuestionsC{
@@ -25,7 +28,17 @@
   margin-top: 35rem; 
   z-index: 1;   
 }
-
+.QuestionsPf{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25rem;
+  margin-right: 5rem;
+  margin-top: 27rem;
+ 
+  z-index: 1;   
+}
 
 .video-containerFQ {
    
