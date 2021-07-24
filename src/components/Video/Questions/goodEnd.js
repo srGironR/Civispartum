@@ -4,6 +4,7 @@ import p1 from "../Assets/Good.mp4";
 import { withRouter } from "react-router-dom";
 import ReactPlayer from "react-player";
 import axios from "axios";
+import {Animated} from "react-animated-css";
 
 var currentdate = new Date();
 var datetime =
@@ -103,6 +104,16 @@ class GoodEnd extends React.Component {
             onEnded={this.changeThis.bind(this)}
           />
         </div>
+        <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="500">
+          <div className="o-reward-text">
+              <h4>Felicitaciones!!! {localStorage.getItem("NombreUsuario")} has completado el modulo voto</h4>
+              <p>Si todas tus respuestas fueron correctas revisa tu peril y encuentra tu primer trofeo</p>
+              <div>
+                <img className="" src="" alt=""></img>
+              </div>
+          </div>
+
+        </Animated>
       </div>
     );
   }

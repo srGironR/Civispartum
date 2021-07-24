@@ -46,14 +46,15 @@ class VideoVoto extends React.Component {
               url={vd1}
               width="640px"
               height="480px"
-              controls="False"
+              controls="false"
               onStart={this.changeThis.bind(this)}
             />
             <div className="o-add-info">
                 <b className="o-tittle-info-add">Información adicional acerca del Voto</b>
-                <p>
-
-                </p>
+                  <a href="https://www.registraduria.gov.co/Elecciones/inf_votan.htm">Caracteristicas del voto</a>
+                  <a href="https://www.registraduria.gov.co/-Historia-del-voto-en-Colombia-.html">Historia del voto en Colombia</a>
+                  <a href="https://www.registraduria.gov.co/Estos-son-los-mecanismos-de.html">Mecanismos de participación ciudadana</a>
+                  <a href="https://www.registraduria.gov.co/-Historia-del-voto-en-Colombia,3677-.html">Historia resumidad del Voto en Colombia</a>
             </div>
           </div>
         </div>

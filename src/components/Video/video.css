@@ -1,5 +1,6 @@
 .ContentVideo-all{
     height: 100vh;
+    width: 100vw;
     background-color: black;
 }
 .info-content{
@@ -38,11 +39,29 @@
 }
 
 .o-video-container-first{
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 7rem;
 }
 
 .VideoV{
-    margin-top: 2rem;
     margin-left: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.o-add-info{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: gray;
+}
+
+.o-add-info a{
+    color: #3168af;
+}
+
+.o-tittle-info-add{
+    color: white;
+    margin-bottom: 0.5rem;
 }

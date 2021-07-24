@@ -27,7 +27,7 @@ class Pr2 extends React.Component {
               />
             </div>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="2000">
-            <div className="QuestionsP">
+            <div className="QuestionsP2">
             
             <Link to="/Bv2p2" className="QF"><QCard  descript="si la opción Sí obtiene la mitad más uno de los votantes." /></Link>
             <Link to="/Bv2p2" className="QF"><QCard  descript="si la opción Sí obtiene la mitad más uno de los votantes, siempre y cuando en la votación participe la cuarta parte de los ciudadanos que componen el censo electoral."/></Link>
