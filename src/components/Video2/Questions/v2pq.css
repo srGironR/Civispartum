@@ -59,3 +59,28 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
+
+  .o-reward-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 10rem;
+    color: white;
+  }
+
+  .o-reward-text h4{
+    font-weight: bolder;
+    font-size: 45px;
+  }
+
+  .o-reward-text p{
+    font-size: 25px;
+  }
+
+  .o-image-cele{
+    display: flex;
+    z-index: 1;
+    width: 25vw;
+  }

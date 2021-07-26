@@ -4,16 +4,22 @@ import p1 from "../Assets/Good.mp4";
 import { withRouter } from "react-router-dom";
 import ReactPlayer from "react-player";
 import axios from "axios";
-import {Animated} from "react-animated-css";
+import { Animated } from "react-animated-css";
+import imageCele from "../../pics/celebracion.svg";
 
 var currentdate = new Date();
 var datetime =
   currentdate.getFullYear() +
-  "-" + (currentdate.getMonth() + 1) +
-  "-" + currentdate.getDate() +
-  " " + currentdate.getHours() +
-  ":" + currentdate.getMinutes() +
-  ":" + currentdate.getSeconds();
+  "-" +
+  (currentdate.getMonth() + 1) +
+  "-" +
+  currentdate.getDate() +
+  " " +
+  currentdate.getHours() +
+  ":" +
+  currentdate.getMinutes() +
+  ":" +
+  currentdate.getSeconds();
 
 class GoodEnd extends React.Component {
   changeThis() {
@@ -30,14 +36,14 @@ class GoodEnd extends React.Component {
     },
     form1: {
       nombreEst: localStorage.getItem("NombreUsuario"),
-      puntaje: 20,
+      puntaje: 5,
       descripcionPuntaje: "Pregunta 3 Voto",
     },
     error: false,
     errorMes: "",
   };
 
-  postFunction1(){
+  postFunction1() {
     let url = "http://localhost:8080/usuario/puntaje/new";
     axios
       .post(url, this.state.form1)
@@ -61,7 +67,7 @@ class GoodEnd extends React.Component {
       });
   }
 
-  postFunction2(){
+  postFunction2() {
     let url = "http://localhost:8080/usuario/registro/new";
     axios
       .post(url, this.state.form)
@@ -88,7 +94,6 @@ class GoodEnd extends React.Component {
   componentDidMount() {
     this.postFunction1();
   }
-  
 
   render() {
     return (
@@ -104,15 +109,29 @@ class GoodEnd extends React.Component {
             onEnded={this.changeThis.bind(this)}
           />
         </div>
-        <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="500">
+        <Animated
+          animationIn="fadeIn"
+          animationOut="fadeOut"
+          isVisible={true}
+          animationInDelay="500"
+        >
           <div className="o-reward-text">
-              <h4>Felicitaciones!!! {localStorage.getItem("NombreUsuario")} has completado el modulo voto</h4>
-              <p>Si todas tus respuestas fueron correctas revisa tu peril y encuentra tu primer trofeo</p>
-              <div>
-                <img className="" src="" alt=""></img>
-              </div>
+            <h4>
+              Felicitaciones!!! {localStorage.getItem("NombreUsuario")} has
+              completado el modulo voto
+            </h4>
+            <p>
+              Si todas tus respuestas fueron correctas revisa tu perfil y
+              encuentra tu primer trofeo
+            </p>
+            <div>
+              <img
+                className="o-image-cele"
+                src={imageCele}
+                alt="Imagen de celebración"
+              ></img>
+            </div>
           </div>
-
         </Animated>
       </div>
     );

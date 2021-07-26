@@ -72,3 +72,9 @@
   .o-reward-text p{
     font-size: 25px;
   }
+
+  .o-image-cele{
+    display: flex;
+    z-index: 1;
+    width: 25vw;
+  }

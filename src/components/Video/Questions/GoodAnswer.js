@@ -8,7 +8,7 @@ class Good extends Component {
   state = {
     form: {
       nombreEst: localStorage.getItem("NombreUsuario"),
-      puntaje: 20,
+      puntaje: 5,
       descripcionPuntaje: "Pregunta 1 Voto",
     },
     error: false,

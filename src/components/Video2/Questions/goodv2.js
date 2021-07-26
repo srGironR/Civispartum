@@ -11,7 +11,7 @@ class Goodv2 extends Component {
       
       form2:{
         "nombreEst":localStorage.getItem("NombreUsuario"),
-        "puntaje": 20,
+        "puntaje": 5,
         "descripcionPuntaje":"Pregunta 1 Referendo"
       },
       error:false,

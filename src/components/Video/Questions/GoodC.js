@@ -11,7 +11,7 @@ class GoodC extends Component {
   state = {
     form: {
       nombreEst: localStorage.getItem("NombreUsuario"),
-      puntaje: 20,
+      puntaje: 5,
       descripcionPuntaje: "Pregunta 2 Voto",
     },
     error: false,

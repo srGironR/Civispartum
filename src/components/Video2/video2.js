@@ -22,16 +22,22 @@ class VideoRef extends React.Component {
                 Mecanismos de Participación: El Referendo.
               </b>
               <p className="descriptVid">
-              Un referendo aprobatorio es el sometimiento de un proyecto de acto legislativo 
-              o de una ley que no fue adoptada por la corporación pública correspondiente, a 
-              consideración del pueblo para que éste decida si lo aprueba o lo rechaza, total o 
-              parcialmente. Por el contrario, un referendo derogatorio consiste en el sometimiento 
-              de una norma que fue aprobada por el Congreso, la Asamblea Departamental o el Concejo 
-              Municipal a consideración del pueblo para que éste decida si se deroga la respectiva ley, 
-              ordenanza o acuerdo.
+                El referendo es uno de los mecanismos de participación ciudadana
+                previstos en el artículo 103 de la Constitución y en la Ley 134
+                de 1994. Hay referendos aprobatorios y derogatorios. 
               </p>
             </div>
-          
+
+            <div className="Concept-content">
+              <b className="TittlConcept">Mecánicas del video interactivo</b>
+              <p className="descriptConcept">
+                El video comienza cuando le das click en reproducir, el video se
+                expandirá en pantalla completa y alrededor de 3 minutos de
+                teoría, comenzará una serie de preguntas sobre la información
+                anterior dada. No te distraigas cualquier información es valiosa
+                para responder. ¡Que comience el juego!.
+              </p>
+            </div>
           </div>
           <div className="VideoV">
             <ReactPlayer
@@ -42,6 +48,21 @@ class VideoRef extends React.Component {
               controls="False"
               onStart={this.changeThis.bind(this)}
             />
+
+            <div className="o-add-info">
+              <b className="o-tittle-info-add">
+                Información adicional acerca del Voto
+              </b>
+              <a href="https://www.registraduria.gov.co/Que-es-un-referendo.html">
+                ¿Qué es un Referendo?
+              </a>
+              <a href="https://www.registraduria.gov.co/-Referendo-3646-.html">
+                Referendo mecanismo de participación ciudadana
+              </a>
+              <a href="https://www.registraduria.gov.co/rev_electro/articulos/referendo.htm">
+                Caracteristicas Referendo
+              </a>
+            </div>
           </div>
         </div>
       </div>
