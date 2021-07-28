@@ -27,7 +27,7 @@ class Pr3 extends React.Component {
               />
             </div>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="21000">
-            <div className="QuestionsP2">
+            <div className="QuestionsP23">
             
             <Link to="/GudV2p3" className="QF"><QCard  descript="Constitucional." /></Link>
             <Link to="/Bv2p3" className="QF"><QCard  descript="Aprobatorio."/></Link>

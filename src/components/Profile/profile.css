@@ -43,6 +43,23 @@
     margin-bottom: 2rem;
     margin-top: -6rem;
 }
+
+.o-content-registro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    
+}
+
+.o-button-showmore{
+    color: #235390;
+    background-color: transparent;
+    width: 8rem;
+    margin-left: 10rem;
+    border: none;
+}
+
 .Medal{    
     filter: grayscale(100%);
     width: 2.1875rem;

@@ -12,6 +12,7 @@ import user from "../pics/user.png";
 import axios from "axios";
 
 class Profile extends React.Component {
+    
   state = {
     registro: [],
     premio1: [],
@@ -44,6 +45,7 @@ class Profile extends React.Component {
       this.setState({ premio2 });
       console.log(premio2);
     });
+
   }
 
   render() {
@@ -76,13 +78,16 @@ class Profile extends React.Component {
             <div className="Prof-His">
               <p className="RTittle">Historial</p>
               <div className="bar-P"></div>
-              {this.state.registro.map((registro) => (
-                <History
-                  isrc={Voto}
-                  Name={registro.actividad}
-                  fec={registro.fechaRegistro.split("T", 1)}
-                />
-              ))}
+              <div className="o-content-registro">
+                {this.state.registro.map((registro) => (
+                  <History
+                    isrc={Voto}
+                    Name={registro.actividad}
+                    fec={new Date(registro.fechaRegistro).toLocaleDateString()}
+                  />
+                ))}
+                <button className="o-button-showmore">Ver más</button>
+              </div>
             </div>
             <div className="Prof-ReAr">
               <p className="RTittle">Premios y logros</p>
