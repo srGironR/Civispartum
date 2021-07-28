@@ -1,5 +1,5 @@
-import React from 'react';
-import "../Profile/profile.css"
+import React from "react";
+import "../Profile/profile.css";
 import Sidebar from "../Dashboard/Sidebar";
 import RCard from "../Profile/components/rewardCard";
 import History from "../Profile/components/history.js";
@@ -9,92 +9,108 @@ import Wise from "../pics/wise.png";
 import Voto from "../pics/Voto.png";
 import Champ from "../pics/winner.png";
 import user from "../pics/user.png";
-import axios from 'axios';
+import axios from "axios";
 
+class Profile extends React.Component {
+  state = {
+    registro: [],
+    premio1: [],
+    premio2: [],
+  };
 
+  componentDidMount() {
+    let url1 =
+      "http://localhost:8080/usuario/primer/premio/" +
+      localStorage.getItem("NombreUsuario");
+    let url =
+      "http://localhost:8080/usuario/registro/tres/" +
+      localStorage.getItem("NombreUsuario");
+    let url3 =
+      "http://localhost:8080/usuario/segundo/premio/" +
+      localStorage.getItem("NombreUsuario");
 
+    axios.get(url).then((res) => {
+      const registro = res.data;
+      this.setState({ registro });
+      console.log(registro);
+    });
+    axios.get(url1).then((res) => {
+      const premio1 = res.data;
+      this.setState({ premio1 });
+      console.log(premio1);
+    });
+    axios.get(url3).then((res) => {
+      const premio2 = res.data;
+      this.setState({ premio2 });
+      console.log(premio2);
+    });
+  }
 
-class  Profile extends React.Component{
-
-    state ={
-        registro:[],
-        puntaje:[]
-    }
-
-    componentDidMount() {
-        let url1 = 'http://localhost:8080/usuario/puntaje/'+localStorage.getItem("NombreUsuario");
-        let url = 'http://localhost:8080/usuario/registro/'+localStorage.getItem("NombreUsuario");
-        axios.get(url)
-          .then(res => {
-            const registro = res.data;
-            this.setState({ registro });
-            console.log(registro);
-          })
-          axios.get(url1)
-              .then(res =>{
-                  const puntaje = res.data;
-                  this.setState({puntaje});
-                  console.log(puntaje);
-              })
-          
-      }
-      
-      
-  
-render(){
-    
-    return(
-    <div className="ProfileAll">
-    <Sidebar/>
-    <div className="PA">
-        <div className="Profile-inPH">
+  render() {
+    return (
+      <div className="ProfileAll">
+        <Sidebar />
+        <div className="PA">
+          <div className="Profile-inPH">
             <div className="Profile-info">
-                <img className="imgPer " src={user} alt=""></img>
-                <div className="levelP">
-                    <b className="o-nombre-perfil">{localStorage.getItem("NombreUsuario")}</b>
-                    <div className="TwoLvl">             
-                    <img className="Medal" src={Medal} alt=" "></img>
-                    <p className="lvl"> Nivel: 0</p>
-                    </div>   
+              <img className="imgPer " src={user} alt=""></img>
+              <div className="levelP">
+                <b className="o-nombre-perfil">
+                  {localStorage.getItem("NombreUsuario")}
+                </b>
+                <div className="TwoLvl">
+                  <img className="Medal" src={Medal} alt=" "></img>
+                  <p className="lvl"> Nivel: 0</p>
                 </div>
+              </div>
             </div>
             <div className="Friends">
-                <b className="Friends-title">Amigos</b>
-                <UsersCard isrc={user} Name="Jacob R" timeU="Desde 2021"  />
-                <UsersCard isrc={user} Name="Bella D" timeU="Desde 2021"  />
-                <UsersCard isrc={user} Name="Henry F" timeU="Desde 2021" />     
+              <b className="Friends-title">Amigos</b>
+              <UsersCard isrc={user} Name="Jacob R" timeU="Desde 2021" />
+              <UsersCard isrc={user} Name="Bella D" timeU="Desde 2021" />
+              <UsersCard isrc={user} Name="Henry F" timeU="Desde 2021" />
             </div>
-        </div>
+          </div>
 
-            <div className="PrReArH">
-                <div className="Prof-His">
-                    <p className="RTittle">Historial</p>
-                        <div className="bar-P"></div>
-                        {this.state.registro.map(registro=>
-                            <History isrc={Voto} Name={registro.actividad} fec={registro.fechaRegistro.split("T",1)} score={registro.puntaje}/>)}                        
-                        
-                </div>
-                <div className="Prof-ReAr">
-                    <p className="RTittle">Premios y logros</p>
-                    <div className="bar-P"></div>
-                   
-                    <div className="cardsP">
-                    {this.state.puntaje.map(puntaje=>               
-                    <RCard isrc={Wise} descript="Completa 1 vídeo sin errores" score={puntaje.puntaje}/>)}                
-                    <RCard isrc={Medal} descript="Completa al menos un vídeo con un puntaje de 5 " score="0"/>
-                    <RCard isrc={Champ} descript="Obtén al menos una insignia" score="20"/>   
-                    </div>  
-                     
-                </div>
-                
-            </div>           
-        </div>
-        </div>
-       
+          <div className="PrReArH">
+            <div className="Prof-His">
+              <p className="RTittle">Historial</p>
+              <div className="bar-P"></div>
+              {this.state.registro.map((registro) => (
+                <History
+                  isrc={Voto}
+                  Name={registro.actividad}
+                  fec={registro.fechaRegistro.split("T", 1)}
+                />
+              ))}
+            </div>
+            <div className="Prof-ReAr">
+              <p className="RTittle">Premios y logros</p>
+              <div className="bar-P"></div>
 
-   
-        )
-    }
+              <div className="cardsP">
+                <RCard
+                  isrc={Wise}
+                  descript="Completa el vídeo voto sin errores"
+                  score={this.state.premio1}
+                />
+                <RCard
+                  isrc={Medal}
+                  descript="Completa dos videos"
+                  score={this.state.premio2}
+                />
+                <RCard
+                  isrc={Champ}
+                  descript="Obtén al menos un premio"
+                  score={this.state.premio1}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Profile;
