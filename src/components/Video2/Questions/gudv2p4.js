@@ -118,7 +118,7 @@ class GoodFinal extends React.Component {
           <div className="o-reward-text">
             <h4>
               Felicitaciones!!! {localStorage.getItem("NombreUsuario")} has
-              completado el modulo voto
+              completado el modulo Referendo
             </h4>
             <p>
               Revisa tu perfil para ver si has ganado algún premio
