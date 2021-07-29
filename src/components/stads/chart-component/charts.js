@@ -24,7 +24,7 @@ const Charts = () => {
                 {
                   label: "puntajes",
                   data: puntos,
-                  backgroundColor: ["#2D609A"],
+                  backgroundColor: '#2D609A',
                   borderWidth: 4
                 }
               ]
@@ -43,9 +43,9 @@ const Charts = () => {
         <div className="o-bar-chart">
 
                 <Bar data = {chartData}
-
                     height={400}
                     width={600}
+                    backgroundColor={"#2D609A"}
                     options={{
                         maintainAspectRaatio: false,
                     }}
