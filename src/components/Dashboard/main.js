@@ -1,14 +1,14 @@
 import SideBar from "../Dashboard/Sidebar";
 import SubjeCard from "../Dashboard/SubjectCard/subjectCard";
 import "../Dashboard/main.css";
-import imgV from "../pics/Voto.png"
-import Ilp from "../pics/refe.png"
-import Plebiscito from "../pics/plebiscito.jpg"
-import CP from "../pics/cp.jpg"
-import DH from "../pics/derechos-humanos.jpg"
-import ECI from "../pics/educivi.jpg"
-import EC from "../pics/EduCiudada.jpg"
-import CCT from "../pics/CC.webp"
+import imgV from "../pics/voto-new.png"
+import Ilp from "../pics/referendo-new.png"
+import Plebiscito from "../pics/plebicito.png"
+import CP from "../pics/cp.png"
+import DH from "../pics/derechosHumanos.png"
+import ECI from "../pics/EduCiv.png"
+import EC from "../pics/EduCiu.png"
+import CCT from "../pics/edutip.png"
 import {Link} from 'react-router-dom';
 
 
