@@ -26,6 +26,7 @@ class Case1 extends React.Component {
           animationOut="fadeOut"
           isVisible={true}
           animationInDelay="22000"
+          loop='True'
         >
           <div className="QuestionsC">
             <Link to="/GoodC" className="QF">

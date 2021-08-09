@@ -23,7 +23,8 @@ class Pr4 extends React.Component {
                 width='720px' 
                 height='480px'
                 controls='True' 
-                playing='True'          
+                playing='True' 
+                loop='True'         
               />
             </div>
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="21000">

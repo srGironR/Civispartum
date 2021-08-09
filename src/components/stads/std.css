@@ -8,7 +8,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: space-around;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 }
 
 .o-general-org{
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 5rem;
+    margin-right: 1rem;
 }
 .FrP{
     display: flex;
@@ -32,7 +32,7 @@
     background-color:#2D609A ;
     width: 24.8125rem;
     height: 14.1875rem;
-    margin: 3rem 0 3rem 3rem;
+    margin: 3rem 0 3rem 1rem;
     border-radius: 25px;
     padding-right: 2.5rem;
 }
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 0 2rem 2rem;
+    margin: 2rem 0 2rem 1rem;
     
 }
 .Tittle-text{
