@@ -36,7 +36,7 @@ class GoodFinal extends React.Component {
     },
     form1: {
       nombreEst: localStorage.getItem("NombreUsuario"),
-      puntaje: 5,
+      puntaje: 3,
       descripcionPuntaje: "Pregunta 4 Referendo",
     },
     error: false,

@@ -96,7 +96,7 @@ class Profile extends React.Component {
               <div className="cardsP">
                 <RCard
                   isrc={Wise}
-                  descript="Completa el vídeo voto sin errores"
+                  descript="Completa el vídeo Referendo sin errores"
                   score={this.state.premio1}
                 />
                 <RCard

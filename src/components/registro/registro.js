@@ -6,7 +6,9 @@ import backArrow from "../pics/left-arrosw.png"
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
 
+
 class Register extends React.Component{
+    
 
     state = {
         form:{
@@ -48,7 +50,9 @@ class Register extends React.Component{
     }
 
 render(){
+    
     return(
+        
         <React.Fragment>
         <div className="Login-container">
             <Nnavbar></Nnavbar>
@@ -80,7 +84,10 @@ render(){
                             </Alert>
                         }
                             <button type="submit" class="btn btn-primary" onClick={this.handlerButton}>CREAR CUENTA</button>
+                             
                     </form>
+                    
+                   
                     </div>                  
                 </div>
                 

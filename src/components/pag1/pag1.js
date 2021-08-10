@@ -29,8 +29,8 @@ function pag1(){
                 <b className="title">¿Por qué aprender Competencias Ciudadanas con Civispartum?</b>
                 <p>Entendemos que todas las personas tienen diferentes formas de aprender,
                      por ello esta plataforma se presenta como una alternativa a lo tradicional, 
-                     utilizando elementos audiovisuales que pretenden dar una experiencia activa y entretenida, 
-                     con la cual se pueda adquirir y ampliar conocimientos de competencias ciudadanas.  </p>   
+                     utilizando elementos audiovisuales que pretenden dar una experiencia activa y entretenida 
+                     para ampliar conocimientos de las competencias ciudadanas Colombiana.  </p>   
             </div>                    
             </section>  
             <hr className="new4" width="90%"  align="center"/> 

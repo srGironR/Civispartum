@@ -19,6 +19,7 @@ class Case1 extends React.Component {
             height="480px"
             controls="True"
             playing="True"
+            loop='True'
           />
         </div>
         <Animated

@@ -6,6 +6,8 @@ import {withRouter} from 'react-router-dom';
 
 class Bad extends Component{
 
+    
+
     render() {
         return(
     <div className="Bad-place">
