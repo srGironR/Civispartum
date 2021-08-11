@@ -10,7 +10,7 @@ class Bv2p2 extends Component{
         form2:{
           "nombreEst":localStorage.getItem("NombreUsuario"),
           "puntaje": 2,
-          "descripcionPuntaje":"Pregunta 2 Referendo"
+          "descripcionPuntaje":"Pregunta 2 Referendo -  Incorrecta"
         },
         error:false,
         errorMes:"",

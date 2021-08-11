@@ -12,7 +12,7 @@ class Badv2 extends Component{
         form2:{
           "nombreEst":localStorage.getItem("NombreUsuario"),
           "puntaje": 2,
-          "descripcionPuntaje":"Pregunta 1 Referendo"
+          "descripcionPuntaje":"Pregunta 1 Referendo - Incorrecta"
         },
         error:false,
         errorMes:"",
