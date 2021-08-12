@@ -6,6 +6,7 @@ import ReactPlayer from "react-player";
 import {Animated} from "react-animated-css";
 import imageInt from "../../pics/volver-flecha.svg";
 
+
 class BadFinal extends React.Component {
   changeThis() {
     window.location = "/Temas";

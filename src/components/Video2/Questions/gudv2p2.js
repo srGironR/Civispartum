@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import React, { Component } from 'react';
 import axios from "axios";
 import {withRouter} from 'react-router-dom';
-
+import right from "../Questions/checkG.png"
 
 class Gudv2p2 extends Component {
     
@@ -45,8 +45,12 @@ class Gudv2p2 extends Component {
       render() {
           return (
           <div className="Good-place">
+              <img  className="imgW" src={right} alt=""></img>
           <div className="Title-ans"><b>Respuesta Correcta</b></div>
               <Link className="ttS" to="/V2P3"><button className="btnSgt" onClick={this.handlerButton}><p>Siguiente</p></button></Link>
+              <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
+            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
           </div>
           );
       }

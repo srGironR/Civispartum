@@ -47,7 +47,7 @@
 .o-content-registro{
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     
     
@@ -57,7 +57,7 @@
     color: #235390;
     background-color: transparent;
     width: 8rem;
-    margin-left: 10rem;
+    align-content: center;
     border: none;
 }
 

@@ -12,8 +12,17 @@
     background-color: black;
     height: 100vh;
 }
+.imgW{
+    margin-top: 2rem;
+    width: 8rem;
+}
+.descriptW{
+    margin-top: 2rem;
+    width: 50rem;
+    color: blanchedalmond;
+}
 .Title-ans{
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: 48px;
     color: white;
 }
