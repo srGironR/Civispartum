@@ -48,9 +48,7 @@ class Gudv2p2 extends Component {
               <img  className="imgW" src={right} alt=""></img>
           <div className="Title-ans"><b>Respuesta Correcta</b></div>
               <Link className="ttS" to="/V2P3"><button className="btnSgt" onClick={this.handlerButton}><p>Siguiente</p></button></Link>
-              <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+              <p className="descriptW">Compone una gran mayoria, la cual representa la decisión del pueblo</p>
           </div>
           );
       }

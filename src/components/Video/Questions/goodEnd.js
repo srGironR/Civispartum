@@ -122,7 +122,7 @@ class GoodEnd extends React.Component {
             </h4>
             <p>
               Si todas tus respuestas fueron correctas revisa tu perfil y
-              encuentra tu primer trofeo
+              mira tus avances en los logros
             </p>
             <div>
               <img

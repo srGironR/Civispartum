@@ -48,9 +48,8 @@ class Bv2p3 extends Component{
         <img  className="imgW" src={Wrong} alt=""></img>
         <div className="Title-ans"><b>Respuesta Incorrecta </b></div>
        <Link className="ttS" to="/V2P4"><button className="btnSgt" onClick={this.handlerButton}><p>Siguiente</p></button></Link>
-       <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+       <p className="descriptW">Viene planteado desde gobierno y busca modificar la constitución agregando alguna norma, y 
+       una estructuras que permitan el cuidado de los animales</p>
     </div>
 
 );

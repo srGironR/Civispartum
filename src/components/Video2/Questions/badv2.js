@@ -47,9 +47,7 @@ class Badv2 extends Component{
         <img  className="imgW" src={Wrong} alt=""></img>
         <div className="Title-ans"><b>Respuesta Incorrecta </b></div>
        <Link className="ttS" to="/V2P2"><button className="btnSgt" onClick={this.handlerButton}><p>Siguiente</p></button></Link>
-       <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+       <p className="descriptW">Uno de ellos sale desde gobierno, y los otros dos buscan aprobar o derogar</p>
     </div>
 
 );

@@ -8,9 +8,8 @@ const BadC=()=>(
         <img  className="imgW" src={Wrong} alt=""></img>
         <div className="Title-ans"><b>Respuesta Incorrecta </b></div>
        <Link className="ttS" to="/Case1"><div className="btnSgt" ><p>Inténtalo de nuevo</p></div></Link>
-       <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+       <p className="descriptW">María, esta con todos sus documentos al dia, ademas se encuentra inscrita en su
+       puesto de votación y se encuentra en capacidad de ejercer sus derechos civiles y politicos</p>
     </div>
 
 );

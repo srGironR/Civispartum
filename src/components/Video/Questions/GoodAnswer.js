@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-import right from "../Questions/checkG.png"
+import right from "../Questions/checkG.png";
 
 class Good extends Component {
   state = {
@@ -14,7 +14,7 @@ class Good extends Component {
     },
     error: false,
     errorMes: "",
-  }
+  };
 
   handlerButton = () => {
     let url = "http://localhost:8080/usuario/puntaje/new";
@@ -38,11 +38,11 @@ class Good extends Component {
           errorMes: "Error del servicio",
         });
       });
-  }
+  };
   render() {
     return (
       <div className="Good-place">
-        <img  className="imgW" src={right} alt=""></img>
+        <img className="imgW" src={right} alt=""></img>
         <div className="Title-ans">
           <b>Respuesta Correcta</b>
         </div>
@@ -51,9 +51,13 @@ class Good extends Component {
             <p>Siguiente</p>
           </button>
         </Link>
-        <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+        <p className="descriptW">
+          El voto contiene la decisión que cada ciudadano toma libremente sobre
+          la persona que quiere que lo represente en un determinado cargo de
+          elección popular. Es la manera que tenemos los colombianos de decidir,
+          entre todos, el rumbo que tomará el país, nuestro departamento,
+          nuestra ciudad o nuestra localidad.{" "}
+        </p>
       </div>
     );
   }

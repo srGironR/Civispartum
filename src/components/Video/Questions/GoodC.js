@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-import right from "../Questions/checkG.png"
-
+import right from "../Questions/checkG.png";
 
 class GoodC extends Component {
-
   state = {
     form: {
       nombreEst: localStorage.getItem("NombreUsuario"),
@@ -16,35 +14,36 @@ class GoodC extends Component {
     },
     error: false,
     errorMes: "",
-  }
+  };
 
-  handlerButton = () =>{
-    let url = 'http://localhost:8080/usuario/puntaje/new';
-    axios.post(url, this.state.form)
-    .then(response =>{
-        if(response.data === "Ok"){
-            console.log("ok");
-        }else{
-            this.setState({
-                error : true,
-                errorMes : response.data
-            })
+  handlerButton = () => {
+    let url = "http://localhost:8080/usuario/puntaje/new";
+    axios
+      .post(url, this.state.form)
+      .then((response) => {
+        if (response.data === "Ok") {
+          console.log("ok");
+        } else {
+          this.setState({
+            error: true,
+            errorMes: response.data,
+          });
         }
         console.log(response);
-    }).catch( error =>{
-        console.log(error)
+      })
+      .catch((error) => {
+        console.log(error);
         this.setState({
-            error : true,
-            errorMes : "Error del servicio"
-        })
-    })
-
-  }
+          error: true,
+          errorMes: "Error del servicio",
+        });
+      });
+  };
 
   render() {
     return (
       <div className="Good-place">
-        <img  className="imgW" src={right} alt=""></img>
+        <img className="imgW" src={right} alt=""></img>
         <div className="Title-ans">
           <b>Respuesta Correcta</b>
         </div>
@@ -53,9 +52,10 @@ class GoodC extends Component {
             <p>Siguiente</p>
           </button>
         </Link>
-        <p className="descriptW">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed aliquam sed nunc vitae efficitur. Donec iaculis porta lorem eu consectetur.
-            Maecenas eros nulla, hendrerit eget lacus ac, convallis viverra est. </p>
+        <p className="descriptW">
+          María cumple con todos los requisitos por lo tanto esta en la
+          capacidad de hacer valer su derecho y cumplir su deber
+        </p>
       </div>
     );
   }
